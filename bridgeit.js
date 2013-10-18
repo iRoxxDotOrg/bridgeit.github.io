@@ -459,8 +459,8 @@ if (!window.console) {
                     try {
                         callback(sxEvent);
                     } catch (e)  {
-                        alert("Device function callback failed " + e);
-                        alert(e.stack);
+                        console.error("Device function callback failed " + e);
+                        console.error(e.stack);
                     }
                     bridgeit.deviceCommandCallback = null;
                 } else{
@@ -580,7 +580,6 @@ if (!window.console) {
         var img = document.createElement('img');
         img.src = url;
         url = img.src;
-        img.src = null; //prevent server request
         return url;
     }
 
