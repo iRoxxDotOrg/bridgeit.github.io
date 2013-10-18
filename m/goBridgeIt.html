@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    var LAST_PAGE_KEY = "bridgeit.lastpage";
+    if (localStorage)  {
+        var lastPage = localStorage.getItem(LAST_PAGE_KEY);
+        if (null != lastPage)  {
+            window.location = lastPage;
+        }
+    }
+</script>
+</head>
+<body>
+Cloud Push landing page. 
+</body>
+</html>
