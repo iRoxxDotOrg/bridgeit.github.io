@@ -52,13 +52,24 @@
                 function handleNotification(event)  {
                     alert(event);
                 }
+
+                function handlePush()  {
+                    var now = new Date();
+                    var outDiv = document.getElementById("notifications");
+                    outDiv.innerHTML = 
+                        "<b>You have been notified:</b> " + 
+                        now.getHours() + ":" + 
+                        ("00" + now.getMinutes()).slice(-2) + ":" +
+                        ("00" + now.getSeconds()).slice(-2);
+                    window.setTimeout(function() {
+                        outDiv.innerHTML = "";
+                    }, 5000)
+                        
+                }
             
                 bridgeit.usePushService("http://labs.icesoft.com/push");
                 //change to a uniquely generated pushID once initial testing is complete
-                bridgeit.addPushListener('bridgeit', function() {
-                    //console.log("notified");
-                    console.log("You have been notified.");
-                });
+                bridgeit.addPushListener('bridgeit', 'handlePush');
             
                 window.addEventListener("pageShow", function () {
                     ice.push.connection.resumeConnection();
