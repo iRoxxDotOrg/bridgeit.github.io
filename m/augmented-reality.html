@@ -68,10 +68,19 @@ title: Augmented Reality
     <fieldset class="desc">
         <div class="row"><p class="normalText">Access an augmented world with a simple line of JavaScript...</p></div>
         <div class="row">
-            <code>
-                bridgeit.augmentedReality(id,<br/>
-                &nbsp;&nbsp;callback, {postURL:myURL});
-            </code>
+{% highlight javascript %}
+var options = {postURL: myPostURL};
+var callback = function(event){...};
+function launchRealityView(){
+    bridgeit.augmentedReality('myId', 
+        callback, options);  
+}
+{% endhighlight %}
+{% highlight html %}
+<a type="button"
+    onclick="launchRealityView();">
+    Reality view...</a>
+{% endhighlight %}
         </div>
     </fieldset>
                 

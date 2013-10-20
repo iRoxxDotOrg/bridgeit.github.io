@@ -8,10 +8,23 @@ title: GeoSpy
     <fieldset class="desc">
         <div class="row"><p class="normalText">Continual geolocation tracking with a simple line of JavaScript...</p></div>
         <div class="row">
-            <code>
-                bridgeit.geoSpy(id, callback,<br/>
-                &nbsp;&nbsp;{postURL:myURL});
-            </code>
+{% highlight javascript %}
+var options = {postURL: myPostURL, 
+    parameters: {
+        strategy:'significant',
+        duration:1,
+        _jguid:jguid}};
+var callback = function(event){...};
+function startTracking(){
+    bridgeit.geoSpy('myId', 
+        callback, options);  
+}
+{% endhighlight %}
+{% highlight html %}
+<a type="button"
+    onclick="startTracking();">
+    Start Tracking</a>
+{% endhighlight %}
         </div>
     </fieldset>
     

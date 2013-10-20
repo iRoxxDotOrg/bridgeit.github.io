@@ -8,15 +8,24 @@ title: Microphone
     <fieldset class="desc">
         <div class="row"><p class="normalText">Access the native audio recording features with a simple line of JavaScript...</p></div>
         <div class="row">
-            <code>
-                bridgeit.microphone(id,callback,<br/>
-                &nbsp;&nbsp;{postURL:myURL});
-            </code>
+{% highlight javascript %}
+var options = {postURL: myPostURL};
+var callback = function(event){...};
+function launchMicrophone(){
+    bridgeit.microphone('myId', 
+        callback, options);  
+}
+{% endhighlight %}
+{% highlight html %}
+<a type="button"
+    onclick="launchMicrophone();">
+    Record Audio</a>
+{% endhighlight %}
         </div>
     </fieldset>
     
     <a id="micBtn" type="button" class="btn"
-        onclick="bridgeit.microphone('micBtn','handleAudio', {postURL: window.serviceHub + '/audio-upload'});">Record some audio</a>
+        onclick="bridgeit.microphone('micBtn','handleAudio', {postURL: window.serviceHub + '/audio-upload'});">Record Audio</a>
         
     <fieldset>
         <div class="row"></div>

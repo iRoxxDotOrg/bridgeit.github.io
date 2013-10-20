@@ -8,15 +8,24 @@ title: Camcorder
     <fieldset class="desc">
         <div class="row"><p class="normalText">Access the native video recording features with a simple line of JavaScript...</p></div>
         <div class="row">
-            <code>
-                bridgeit.camcorder(id,callback,<br/>
-                &nbsp;&nbsp;{postURL:myURL});
-            </code>
+{% highlight javascript %}
+var options = {postURL: myPostURL};
+var callback = function(event){...};
+function launchVideoCamera(){
+    bridgeit.camcorder('myId', 
+        callback, options);  
+}
+{% endhighlight %}
+{% highlight html %}
+<a type="button"
+    onclick="launchVideoCamera();">
+    Record a video</a>
+{% endhighlight %}
         </div>
     </fieldset>
     
     <a id="camcorderBtn" type="button" class="btn"
-        onclick="bridgeit.camcorder('camcorderBtn','handleVideo', {postURL: window.serviceHub + '/video-upload'});">Record some video</a>
+        onclick="bridgeit.camcorder('camcorderBtn','handleVideo', {postURL: window.serviceHub + '/video-upload'});">Record a Video</a>
         
     <fieldset id="videoThumbnailField" style="display:none">
         <div class="row">

@@ -1,6 +1,5 @@
-	<div data-role="header" class="hdr {% if page.id != "home" %}demo{% endif %}" data-position="fixed">
-		{% if page.id != "home" %}
-	    <a data-rel="back" class="btnBack" data-transition="slide"><i class="icon-chevron-left"></i></a>
-	    {% endif %}
+	<div data-role="header" class="hdr {% if page.id != "home" %}demo{% endif %}" data-position="fixed" data-id="header">
+		
+	    <a data-rel="back" class="btnBack" data-transition="slide" {% if page.id == "home" %}style="width:0;opacity: 0"{% endif %}><i class="icon-chevron-left"></i></a>
 	    <h1><span class="bridge-font-color">Bridge</span><span class="it-font-color">It</span></h1>
 	</div>

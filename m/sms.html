@@ -8,10 +8,18 @@ title: SMS
     <fieldset class="desc">
         <div class="row"><p class="normalText">Send an SMS with a simple line of JavaScript...</p></div>
         <div class="row">
-            <code>
-                bridgeit.sms(id,callback,<br/>
-                &nbsp;&nbsp;{postURL:myURL});
-            </code>
+{% highlight javascript %}
+var callback = function(event){...};
+function launchSms(){
+    bridgeit.sms'myId', 
+        callback);  
+}
+{% endhighlight %}
+{% highlight html %}
+<a type="button"
+    onclick="launchSms();">
+    Send an SMS</a>
+{% endhighlight %}
         </div>
     </fieldset>
     
