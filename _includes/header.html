@@ -1,4 +1,6 @@
-	<div data-role="header" class="hdr demo" data-position="fixed">
+	<div data-role="header" class="hdr {% if page.id != "home" %}demo{% endif %}" data-position="fixed">
+		{% if page.id != "home" %}
 	    <a data-rel="back" class="btnBack" data-transition="slide"><i class="icon-chevron-left"></i></a>
+	    {% endif %}
 	    <h1><span class="bridge-font-color">Bridge</span><span class="it-font-color">It</span></h1>
 	</div>
