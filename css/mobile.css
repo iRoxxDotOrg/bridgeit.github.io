@@ -147,7 +147,8 @@ body .hdr{
     color: #FFF!important;
 }
 /* jqm */
-.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button {
+.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button,
+.ui-btn-up-c, .ui-btn-hover-c, .ui-btn-down-c  {
     font-family: 'Open Sans', sans-serif;
 }
 .bridge-font-color{
@@ -345,4 +346,8 @@ fieldset.desc{
 }
 .ui-footer .icon-facebook-sign, .ui-footer .icon-github{
     right: 15px;
+}
+.ui-btn-active:visited, .ui-btn-active:hover, .ui-btn-active a.ui-link-inherit {
+	color: #2F3E46;
+	text-shadow: 0px 0px 12px rgba(221, 87, 52, 0.5);
 }
