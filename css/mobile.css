@@ -348,8 +348,11 @@ fieldset.desc{
 .ui-footer .icon-twitter-sign{
     right: 60px;
 }
-.ui-footer .icon-facebook-sign, .ui-footer .icon-github{
+.ui-footer .icon-facebook-sign{
     right: 15px;
+}
+.ui-footer .icon-github{
+    right: 105px;
 }
 .ui-btn-active:visited, .ui-btn-active:hover, .ui-btn-active a.ui-link-inherit,
 .btnBack:active, .btnBack:focus {
