@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    var LAST_PAGE_KEY = "bridgeit.lastpage";
+    if (localStorage)  {
+        var lastPage = localStorage.getItem(LAST_PAGE_KEY);
+        if (null != lastPage)  {
+            var lastHash = lastPage.lastIndexOf("#");
+            var theHash = "";
+            var theURL = lastPage;
+            if (lastHash > 0)  {
+                theHash = lastPage.substring(lastHash);
+                theURL = lastPage.substring(0, lastHash);
+            }
+            var hashSubClause = "";
+            if (!!theHash)  {
+                hashSubClause = "h=" + escape(theHash);
+            }
+
+            callbackClause = "c=" + escape("bridgeit.handleCloudPush");
+
+            var hashClause = "";
+            if (!!hashSubClause || !!callbackClause)  {
+                hashClause = "!h=" + escape(hashSubClause) + 
+                        escape(callbackClause);
+            }
+            returnURL = theURL + "#icemobilesx_" + hashClause;
+            window.location.replace(returnURL);
+        }
+    }
+</script>
+</head>
+<body>
+Cloud Push landing page. 
+</body>
+</html>
