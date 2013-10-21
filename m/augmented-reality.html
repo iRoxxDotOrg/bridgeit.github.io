@@ -1,9 +1,35 @@
----
-id: augmentedreality
-layout: demo
-title: Augmented Reality
----
-<div onfocus="setTimeout(function(){google.maps.event.trigger(map, 'resize')},1000);" >
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BridgeIt  Augmented Reality </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+      <meta name='apple-itunes-app' content="app-id=485908934, app-argument=icemobile://c=register&amp;r=./index.html&amp;u=./service/upload"/>
+      <link rel="icon" type="image/png" href="../favicon.png">
+      <link rel="apple-touch-icon" href="bridgeit-logo-touch-icon.png" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,600,300,400' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../css/main.css"/>
+      <link rel="stylesheet" href="../css/icons.css"/>
+      <link rel="stylesheet" href="../css/mobile.css" type="text/css" />
+      <link rel="stylesheet" href="../css/syntax.css" type="text/css" />
+      
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=geometry"></script>
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script type="application/x-javascript" src="../javascript/bridgeit.js"></script>
+      <script type="text/javascript" src="bridgeit-demos.js"></script>
+      
+   </head>
+
+<body>
+    <div data-role="page" id="augmentedreality">  
+        	<div data-role="header" class="hdr demo" data-position="fixed" data-id="header">
+		
+	    <a data-rel="back" class="btnBack" data-transition="slide" ><i class="icon-chevron-left"></i></a>
+	    <h1><span class="bridge-font-color">Bridge</span><span class="it-font-color">It</span></h1>
+	</div>
+
+        <div data-role="content">
+        	<div onfocus="setTimeout(function(){google.maps.event.trigger(map, 'resize')},1000);" >
     <script type="text/javascript">
       var map = null;
       var marker = null;
@@ -68,19 +94,17 @@ title: Augmented Reality
     <fieldset class="desc">
         <div class="row"><p class="normalText">Access an augmented world with a simple line of JavaScript...</p></div>
         <div class="row">
-{% highlight javascript %}
-var options = {postURL: myPostURL};
-var callback = function(event){...};
-function launchRealityView(){
-    bridgeit.augmentedReality('myId', 
-        callback, options);  
-}
-{% endhighlight %}
-{% highlight html %}
-<a type="button"
-    onclick="launchRealityView();">
-    Reality view...</a>
-{% endhighlight %}
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span><span class="nx">postURL</span><span class="o">:</span> <span class="nx">myPostURL</span><span class="p">};</span>
+<span class="kd">var</span> <span class="nx">callback</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){...};</span>
+<span class="kd">function</span> <span class="nx">launchRealityView</span><span class="p">(){</span>
+    <span class="nx">bridgeit</span><span class="p">.</span><span class="nx">augmentedReality</span><span class="p">(</span><span class="s1">&#39;myId&#39;</span><span class="p">,</span> 
+        <span class="nx">callback</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>  
+<span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span>
+    <span class="na">onclick=</span><span class="s">&quot;launchRealityView();&quot;</span><span class="nt">&gt;</span>
+    Reality view...<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
         </div>
     </fieldset>
                 
@@ -125,3 +149,20 @@ function launchRealityView(){
         Selected location: <img style="height:40px;" id="selected" >
     </fieldset>
 </div>
+    	</div>
+    		<div data-role="footer" data-id="footer"> 
+	    <a href="#" class="icesoft-link" data-role="none">
+	        <img src="../images/icesoft-logo-bw-2x.png"/>
+	    </a>
+		<div class="copyright">&copy;&nbsp;2002-2013 ICEsoft Technologies Inc. All rights reserved.</div>
+		<a href="https://github.com/bridgeit" data-role="none"><i class="icon-github"></i></a>
+		<a href="https://twitter.com/BridgeItApp" data-role="none"><i class="icon-twitter-sign"></i></a>
+		<i class="icon-facebook-sign"></i>
+	</div> 
+    	 <script type="text/javascript">
+        	$("#augmentedreality div[data-role='content']").css({minHeight: $(window).height()-90});
+    	</script>
+    </div>
+</body>
+</html>
+
