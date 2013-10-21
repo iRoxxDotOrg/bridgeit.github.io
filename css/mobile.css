@@ -109,7 +109,7 @@ body .hdr{
     border-top: 1px solid #BACBD8;
     box-sizing: border-box;
 }
-.btnBack, .btnBack:hover{
+.ui-header .btnBack, .ui-header .btnBack:hover{
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: none;
