@@ -13,6 +13,9 @@ a:focus{
         left: 15px;
     }
 }
+.navbar-default {
+    background-color: transparent;
+}
 .navbar-brand {
     background-image: url(../images/bridgeit-logo-4x.png);
     background-repeat: no-repeat;
