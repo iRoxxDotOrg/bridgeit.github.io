@@ -15,6 +15,10 @@ a:focus{
         position: absolute;
         left: 15px;
     }
+    .navbar-nav > li > a {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 .navbar-default {
     background-color: #FFF;
@@ -34,15 +38,19 @@ a:focus{
 }
 .navbar-brand.c1 {
     background-image: url(../images/bridgeit-cs-concept1.png);
-    background-size: 63%;
+    background-size: 73%;
 }
 
 .navbar-brand.c2 {
     background-image: url(../images/bridgeit-cs-concept4.png);
-    background-size: 72%;
-    background-position: 0 13px;
+    background-size: 92%;
+    background-position: 15px 13px;
 }
-
+@media (max-width: 768px) {
+    .navbar-brand.c0, .navbar-brand.c1, .navbar-brand.c2{
+        width: 250px;
+    }
+}
 .navbar-default .navbar-nav > li > a {
     font-size: 18px;
 }
@@ -322,7 +330,7 @@ a:focus{
         vertical-align: middle;
     }
     .jumbotron {
-        padding-top: 120px;
+        padding-top: 140px;
         padding-bottom: 0;
         text-align: left;
         margin-bottom: 0;
