@@ -14,7 +14,7 @@ a:focus{
     }
 }
 .navbar-default {
-    background-color: transparent;
+    background-color: #FFF;
 }
 .navbar-brand {
     background-image: url(../images/bridgeit-md-concept2.png);
