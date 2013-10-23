@@ -49,6 +49,7 @@ a:focus{
 @media (max-width: 768px) {
     .navbar-brand.c0, .navbar-brand.c1, .navbar-brand.c2{
         width: 250px;
+        background-position: 15px 9px;
     }
 }
 .navbar-default .navbar-nav > li > a {
