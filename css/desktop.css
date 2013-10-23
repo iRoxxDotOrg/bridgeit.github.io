@@ -17,7 +17,7 @@ a:focus{
     background-color: transparent;
 }
 .navbar-brand {
-    background-image: url(../images/bridgeit-logo-4x.png);
+    background-image: url(../images/bridgeit-md-concept2.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 300px;
@@ -25,7 +25,10 @@ a:focus{
     background-size: 62%;
     background-position: 0 4px;
 }
-
+.navbar-brand.c0{
+    background-size: 57%;
+    background-position: 15px 4px;
+}
 .navbar-brand.c1 {
     background-image: url(../images/bridgeit-cs-concept1.png);
     background-size: 63%;
