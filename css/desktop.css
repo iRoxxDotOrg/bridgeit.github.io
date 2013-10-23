@@ -367,8 +367,10 @@ a:focus{
     #carousel .item{
         min-height: 200px;
     }
+    #carousel h1, #carousel h2, #carousel i{
+        text-shadow: 0px 1px 9px #292929;
+    }
     #carousel h1, #carousel h2{
-        text-shadow: 0px 2px 3px #79B59C;
         margin-top: 0px;
     }
     #carousel h2{ font-size: 18px }
