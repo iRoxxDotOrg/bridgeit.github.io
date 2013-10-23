@@ -46,6 +46,11 @@ a:focus{
     background-size: 92%;
     background-position: 15px 13px;
 }
+.navbar-brand.c3 {
+    background-image: url(../images/bridgeit-cs-concept6.png);
+    background-size: 92%;
+    background-position: 15px 13px;
+}
 @media (max-width: 768px) {
     .navbar-brand.c0, .navbar-brand.c1, .navbar-brand.c2{
         width: 250px;
@@ -176,6 +181,9 @@ a:focus{
 .contact .anchors a:hover{
     color: #00ABFF;
 }
+#carousel h1, #carousel h2{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 @media screen and (max-width: 768px) {
     .visible-xs{
         display: inline-block !important;
@@ -232,7 +240,7 @@ a:focus{
         display: none;
      }
      .jumbotron {
-        padding-top: 88px;
+        padding-top: 100px;
         padding-bottom: 0;
         text-align: left;
         margin-bottom: 0;
@@ -389,7 +397,7 @@ a:focus{
     }
     #carousel h2{ font-size: 18px }
     #carousel i{
-        margin-right: 22px;
+        margin-right: 40px;
         font-size: 92px;
         display: inline-block;
     }
