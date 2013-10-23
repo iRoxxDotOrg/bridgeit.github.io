@@ -14,13 +14,24 @@ a:focus{
     }
 }
 .navbar-brand {
-    background-image: url(../images/bridgeit-cs-concept1.png);
+    background-image: url(../images/bridgeit-logo-4x.png);
     background-repeat: no-repeat;
     display: inline-block;
-    width: 200px;
+    width: 300px;
     height: 80px;
-    background-size: 185px 76px;
+    background-size: 196px 76px;
     background-position: 0 4px;
+}
+
+.navbar-brand.c1 {
+    background-image: url(../images/bridgeit-cs-concept1.png);
+    background-size: 63%;
+}
+
+.navbar-brand.c2 {
+    background-image: url(../images/bridgeit-cs-concept3.png);
+    background-size: 72%;
+    background-position: 0 13px;
 }
 
 .navbar-default .navbar-nav > li > a {

@@ -1,0 +1,301 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BridgeIt: Native mobile integration for webapps">
+        <meta name="author" content="ICEsoft Technologies">
+        <script type="text/javascript" src="./javascript/bridgeit.js"></script>
+        <script type="text/javascript">
+            if( bridgeit.isSupportedPlatform()){
+                window.location = './m/';
+            }
+        </script>
+        <link rel="shortcut icon" href="favicon.png">
+    
+        <title>BridgeIt</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,600,300,400' rel='stylesheet' type='text/css'><link href="bootstrap-3.0.0/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+        <link href="css/desktop.css" rel="stylesheet" media="screen">
+        <link href="css/icons.css" rel="stylesheet" media="screen">
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../../assets/js/html5shiv.js"></script>
+          <script src="../../assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-list-ul"></span>
+                        </button>
+                        <a class="navbar-brand c1" href="#" tabindex="0"></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" tabindex="1">
+                                    BridgeIt
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="5">Features</a></li>
+                                    <li><a href="#" tabindex="6">Demos</a></li>
+                                    <li><a href="#" tabindex="7">Get Started</a></li>
+                                    <li><a href="#" tabindex="8">Downloads</a></li>
+                                    <li class="dropdown-menu-summary">
+                                      Lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#about" class="dropdown-toggle" data-toggle="dropdown" tabindex="2">Community<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="9">Community Link 1</a></li>
+                                    <li><a href="#" tabindex="10">Community Link 2</a></li>
+                                    <li><a href="#" tabindex="11">Community Link 3</a></li>
+                                    <li class="dropdown-menu-summary">
+                                      Lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#contact" class="dropdown-toggle" data-toggle="dropdown" tabindex="3">Help<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="12">Help Link 1</a></li>
+                                    <li><a href="#" tabindex="13">Help Link 2</a></li>
+                                    <li><a href="#" tabindex="14">Help Link 3</a></li>
+                                    <li class="dropdown-menu-summary">
+                                      Lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" tabindex="4">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" tabindex="15">About Link 1</a></li>
+                                    <li><a href="#" tabindex="16">About Link 2</a></li>
+                                    <li><a href="#" tabindex="17">About Link 3</a></li>
+                                    <li class="dropdown-menu-summary">
+                                      Lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+
+            <div class="jumbotron">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h1>Meet <span style="font-style:italic">BridgeIt</span>...</h1>
+                            <p>Easily add native mobile features to your web apps</p>
+                            <p><a class="btn btn-warning">Get Started! <i class="icon-caret-right"></i></a></p>
+                        </div>
+                        <div class="col-xs-6 banner">
+                            <img src="images/banner-image.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="carousel" class="carousel slide">
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div id="camera" class="item active">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-camera"></i>Camera</h1>
+                            <h2>Native mobile device camera ...</h2>
+                        </div>
+                    </div>
+                    <div id="camcorder" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-film"></i>Camcorder</h1>
+                            <h2>Native mobile device video recording...</h2>
+                        </div>
+                    </div>
+                    <div id="scan" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-qrcode"></i>QR Scan</h1>
+                            <h2>Native mobile QR Code scanning...</h2>
+                        </div>
+                    </div>
+                    <div id="microphone" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-microphone"></i>Microphone</h1>
+                            <h2>Native mobile audio recording...</h2>
+                        </div>
+                    </div>
+                    <div id="contacts" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-group"></i>Contact List</h1>
+                            <h2>Access the device contact list...</h2>
+                        </div>
+                    </div>
+                    <div id="geospy" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-map-marker"></i>GeoSpy</h1>
+                            <h2>Continual geolocation tracking...</h2>
+                        </div>
+                    </div>
+                    <div id="ar" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-eye-open"></i>Augmented Reality</h1>
+                            <h2>Launch your users into new worlds...</h2>
+                        </div>
+                    </div>
+                    <div id="sms" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-mobile-phone"></i>SMS</h1>
+                            <h2>Send an SMS...</h2>
+                        </div>
+                    </div>
+                    <div id="cloudpush" class="item">
+                        <div class="carousel-caption">
+                            <h1><i class="icon-cloud-download"></i>Cloud Push</h1>
+                            <h2>Native mobile device notification...</h2>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel" data-slide="prev">
+                    <span class="icon-caret-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide="next">
+                    <span class="icon-caret-right"></span>
+                </a>
+            </div>
+        
+            <div class="container items">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <h3>Meet BridgeIt...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="more">Learn more about <em>BridgeIt</em>&nbsp;>></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <img src="images/bridgeit.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <img src="images/community.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <h3>Community</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="more">Join the <em>BridgeIt</em>&nbsp;community&nbsp;>></a>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <h3>Need Help?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="more">View <em>BridgeIt</em>&nbsp;Documentation&nbsp;>></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <img src="images/help.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-xs-6 col-sm-4">
+                        <img src="images/about.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <h3>Abous us</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="more">Learn more about <em>BridgeIt</em>&nbsp;>></a>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+            
+         <div id="footer">
+            <div class="links">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>BridgeIt</h4>
+                            <div><a href="#">Features</a></div>
+                            <div><a href="#">Demos</a></div>
+                            <div><a href="#">Getting Started</a></div>
+                            <div><a href="#">Downloads</a></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>Community</h4>
+                            <div><a href="#">GitHub</a></div>
+                            <div><a href="#">Twitter</a></div>
+                            <div><a href="#">Facebook</a></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>Help</h4>
+                            <div><a href="#">Forums</a></div>
+                            <div><a href="./docs/index.html">Docs</a></div>
+                            <div><a href="#">Contact Us</a></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>About</h4>
+                            <div><a href="#">ICEsoft</a></div>
+                            <div><a href="#">License</a></div>
+                            <div><a href="#">Privacy</a></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <img src="images/icesoft-logo-bw-2x.png" style="width:150px"/>
+                        </div>
+                        <div class="col-xs-6 anchors">
+                            <a href="#">About&nbsp;ICEsoft</a>
+                            <a href="#">License</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            &copy;&nbsp;2013 ICEsoft Technologies Inc. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+       <script src="javascript/jquery-1.10.2.js"></script>
+       <script src="javascript/bootstrap.js"></script>
+       <script>
+       $('.carousel').carousel({interval:5000});
+       </script>
+    </body>
+</html>
