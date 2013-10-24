@@ -24,7 +24,7 @@ a:focus{
     background-color: #FFF;
 }
 .navbar-brand {
-    background-image: url(../images/bridgeit-md-concept2.png);
+    background-image: url(../images/bridgeit-md-concept2-gray.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 300px;
@@ -351,7 +351,7 @@ a:focus{
     .jumbotron .container{
         margin-left: 0;
         text-align: right;
-        min-height: 280px;
+        min-height: 320px;
     }
     .jumbotron h1 {
         font-size: 40px;
@@ -364,7 +364,7 @@ a:focus{
         text-align: left;
     }
     .jumbotron img{
-         width: 311px;
+         width: 356px;
          margin-top: -30px;
     }
     #carousel{
