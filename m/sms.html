@@ -49,8 +49,14 @@
         </div>
     </fieldset>
     
+    <fieldset class="ui-field-contain">
+      <input id="smsNumber" type="phone" placeholder="Enter number" class="ui-input-text"
+        style="box-sizing: border-box"/>
+    </fieldset>
+    
     <a id="smsBtn" type="button" class="btn"
-        onclick="bridgeit.sms('smsBtn',handleSMS, {postURL: window.serviceHub + '/sms'});">Take a Photo</a>
+        onclick="launchSMS();">Send a Text</a>
+
         
     <fieldset>
         <div class="row"></div>
@@ -58,8 +64,18 @@
     <fieldset id="images">
     </fieldset>
     <script type="text/javascript">
+    function launchSMS(){
+      var smsNumber = document.getElementById('smsNumber').value;
+      if( !smsNumber ){
+        alert('Please enter a number to text to');
+      }
+      else{
+        bridgeit.sms(smsNumber, 'Hello from BridgeIt!!!', handleSMS);
+      }
+
+    }
     function handleSMS(event)  {
-        alert(event);
+        alert('handleSMS' + event);
     }
     </script>
 </div>

@@ -582,6 +582,51 @@ if (!window.console) {
         return url;
     }
 
+    function loadPushService(uri, apiKey) {
+        if (ice && ice.push) {
+            console.log('Push service already loaded and configured');
+        } else {
+            var baseURI = uri + (endsWith(uri, '/') ? '' : '/');
+            var codeURI = baseURI + 'code.icepush';
+            var code = httpGET(codeURI, 'apiKey=' + apiKey);
+            eval(code);
+
+            ice.push.configuration.contextPath = baseURI;
+            ice.push.connection.startConnection();
+            findGoBridgeIt();
+        }
+    }
+
+    function addPushListenerImpl(group, callback) {
+        if (ice && ice.push && ice.push.configuration.contextPath) {
+            var pushId = ice.push.createPushId();
+            ice.push.addGroupMember(group, pushId);
+            if ("string" != typeof(callback))  {
+                console.error(
+                    "BridgeIt Cloud Push callbacks must be named in window scope");
+            } else {
+                var callbackName = callback;
+                callback = getNamedObject(callback);
+                if (!!callback)  {
+                    if (localStorage)  {
+                        var callbacks = localStorage
+                                .getItem(CLOUD_CALLBACKS_KEY);
+                        if (!callbacks)  {
+                            callbacks = " ";
+                        }
+                        if (callbacks.indexOf(" " + callbackName + " ") < 0)  {
+                            callbacks += callbackName + " ";
+                        }
+                        localStorage.setItem(CLOUD_CALLBACKS_KEY, callbacks);
+                    }
+                }
+            }
+            ice.push.register([ pushId ], callback);
+        } else {
+            console.error('Push service is not active');
+        }
+    };
+
     /* *********************** PUBLIC **********************************/
     
     /**
@@ -664,6 +709,7 @@ if (!window.console) {
     b.fetchContact = function(id, callback, options)  {
         deviceCommand("fetchContacts", id, callback, options);
     };
+
     /**
      * Send an SMS message.
      * 
@@ -673,8 +719,38 @@ if (!window.console) {
      * @inheritdoc #scan
      * 
      */
-    b.sms = function(id, callback, options)  {
-        deviceCommand("sms", id, callback, options);
+    /**
+     * Send an SMS message.
+     * 
+     * The sms function will send an SMS message to a number on supported
+     * platforms. On iOS devices, a native SMS call is made through the
+     * BridgeIt app. On other platforms an SMS URL protocol is used in a
+     * DOM anchor element, which the browser may use to launch the device
+     * SMS functionality, if available.
+     * 
+     * @alias plugin.sms
+     * @param {String} number The phone number to send the message to
+     * @param {String} body The message
+     * @param {Function} callback The callback function.
+     * 
+     */
+    b.sms = function(number, body, callback)  {
+        if( number == 'undefined' || number == '')
+            return;
+        if( b.isIOS()){
+            deviceCommand("sms", id, callback, {n: number, body: message});
+        }
+        else{
+            var smsBtn = document.createElement('a');
+            var cleanNumber = number.replace(/[\s-\.\+]/g,'');
+            smsBtn.href = 'sms://+' + cleanNumber + '?body=' + encodeURI(body);
+            smsBtn.style = 'display:none';
+            document.body.appendChild(smsBtn);
+            smsBtn.click();
+            document.removeChild(smsBtn);
+            if( callback )
+                callBack();
+        }
     };
     /**
      * Activate and immerse yourself in a new and better world.
@@ -727,13 +803,14 @@ if (!window.console) {
     /**
      * Set allowAnonymousCallbacks to true to take advantage of persistent
      * callback functions currently supported on iOS.
-     * 
+     * @property {Boolean} [allowAnonymousCallbacks=false]
      */
     b.allowAnonymousCallbacks = false;
 
     /**
      * Is the current browser iOS
      * @alias plugin.isIOS
+     * @readonly
      */
     b.isIOS = function(){
         var i = 0,
@@ -750,7 +827,8 @@ if (!window.console) {
 
     /**
      * Is the current browser Android
-     * @alias plugin.isAndroid
+     * @property isAndroid
+     * @readonly
      */
     b.isAndroid = function(){
         return navigator.userAgent.toLowerCase()
@@ -759,7 +837,8 @@ if (!window.console) {
 
     /**
      * Is the current browser Windows Phone 8
-     * @alias plugin.isWindowsPhone8
+     * @property isWindowsPhone8
+     * @readonly
      */
     b.isWindowsPhone8 = function(){
         var ua = navigator.userAgent;
@@ -771,7 +850,8 @@ if (!window.console) {
     /**
      * Check if the current browser is supported by the BridgeIt Native Mobile app
      * Currently iOS, Android, and Windows Phone 8 are supported.
-     * @alias plugin.isSupportedPlatform
+     * @property isSupportedPlatform
+     * @readonly
      */
     b.isSupportedPlatform = function(){
         var supported = b.isIOS() || b.isAndroid() || b.isWindowsPhone8();
@@ -784,11 +864,15 @@ if (!window.console) {
      * to allow Cloud Push to go back to the most recent page
      * The defaults of the host root and the current relative
      * directory URL do not need to be specified
-     * @alias plugin.goBridgeItURL
+     * @property {String} [goBridgeItURL]
      */
     b.goBridgeItURL = null;
 
     var CLOUD_CALLBACKS_KEY = "bridgeit.cloudcallbacks";
+
+    /**
+     * @alias plugin.handleCloudPush
+     */
     b.handleCloudPush = function ()  {
         var callbacks = localStorage.getItem(CLOUD_CALLBACKS_KEY);
         var parts = callbacks.split(" ");
@@ -799,26 +883,18 @@ if (!window.console) {
                 callback();
             }
         }
-    }
+    };
+
     /**
      * Configure Push service and connect to it.
+     * @alias plugin.usePushService
      * @param uri the location of the service
      * @param apiKey
-     * @alias plugin.usePushService
      */
     b.usePushService = function(uri, apiKey) {
-        if (ice && ice.push) {
-            console.log('Push service already loaded and configured');
-        } else {
-            var baseURI = uri + (endsWith(uri, '/') ? '' : '/');
-            var codeURI = baseURI + 'code.icepush';
-            var code = httpGET(codeURI, 'apiKey=' + apiKey);
-            eval(code);
-
-            ice.push.configuration.contextPath = baseURI;
-            ice.push.connection.startConnection();
-            findGoBridgeIt();
-        }
+        window.setTimeout(function() {
+            loadPushService(uri, apiKey);
+        }, 1);
     };
 
     /**
@@ -829,33 +905,9 @@ if (!window.console) {
      * @alias plugin.addPushListener
      */
     b.addPushListener = function(group, callback) {
-        if (ice && ice.push && ice.push.configuration.contextPath) {
-            var pushId = ice.push.createPushId();
-            ice.push.addGroupMember(group, pushId);
-            if ("string" != typeof(callback))  {
-                console.error(
-                    "BridgeIt Cloud Push callbacks must be named in window scope");
-            } else {
-                var callbackName = callback;
-                callback = getNamedObject(callback);
-                if (!!callback)  {
-                    if (localStorage)  {
-                        var callbacks = localStorage
-                                .getItem(CLOUD_CALLBACKS_KEY);
-                        if (!callbacks)  {
-                            callbacks = " ";
-                        }
-                        if (callbacks.indexOf(" " + callbackName + " ") < 0)  {
-                            callbacks += callbackName + " ";
-                        }
-                        localStorage.setItem(CLOUD_CALLBACKS_KEY, callbacks);
-                    }
-                }
-            }
-            ice.push.register([ pushId ], callback);
-        } else {
-            console.error('Push service is not active');
-        }
+        window.setTimeout(function() {
+            addPushListenerImpl(group, callback);
+        }, 1);
     };
 
     /**
