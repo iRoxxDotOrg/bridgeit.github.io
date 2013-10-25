@@ -416,4 +416,7 @@ a:focus{
         font-size: 36px;
         text-shadow: 1px 1px 1px #769269;
     }
+    .main{
+        margin-top: 40px;
+    }
 }

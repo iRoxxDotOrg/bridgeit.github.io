@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>{{ page.title }}</title>
+        {% include head.html %}
+    </head>
+    <body>
+        <div id="wrap">
+            {% include navbar.html logo="0" %}
+            <div class="container main">
+            {{ content }}
+            </div>
+    
+        </div>
+            
+        {% include footer.html %}
+
+       <script src="javascript/jquery-1.10.2.js"></script>
+       <script src="javascript/bootstrap.js"></script>
+       <script>
+       $('.carousel').carousel({interval:5000});
+       </script>
+    </body>
+</html>
