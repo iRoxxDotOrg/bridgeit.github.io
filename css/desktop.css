@@ -416,10 +416,7 @@ a:focus{
         font-size: 36px;
         text-shadow: 1px 1px 1px #769269;
     }
-    .main{
-        margin-top: 40px;
-    }
-
+    
     /* main */
     .main h1{
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -434,7 +431,8 @@ a:focus{
 .features-table{
     margin: 20px;
 }
-.features-table .col-xs-1{
+.features-table .col-xs-1, .features-table .col-xs-2, .features-table .col-xs-3, .features-table .col-xs-4,
+.features-table .col-sm-1, .features-table .col-sm-2{
     padding: 0;
 }
 .features-table .row .cell{
@@ -534,8 +532,19 @@ a:focus{
     padding: 0;
 }
 @media screen and (max-width: 768px) {
+    .features-table{
+        margin: 0;
+        width: 100%;
+    }
     .features-table .row .cell{
         height: 50px;
+    }
+    .features-table .row div:first-child .cell {
+        padding-top: 2px;
+    }
+    .features-table .row div:first-child .cell > div:first-child{
+        font-size: 10px;
+        margin-bottom: 8px;
     }
     .features-table .row:first-child > div > .cell > div:first-child{
         display: none;
@@ -544,18 +553,17 @@ a:focus{
         font-size: 20px;
     }
     .features-table .row .cell i.contact-at{
-        margin-left: -4px;
         font-size: 8px;
-        margin-top: 14px;
+        margin-top: 11px;
     }
     .features-table .row .cell i.aug{
         font-size: 33px;
-        margin-top: -18px;
+        margin-top: -12px;
     }
     .features-table .row .cell i.icon-picture{
-        margin-left: -4px;
+        margin-left: 2px;
         font-size: 8px;
-        margin-top: 5px;
+        margin-top: 0;
     }
     .features-table .row div:first-child i {
         font-size: 20px;
@@ -565,5 +573,11 @@ a:focus{
         width: 15px;
         height: 15px;
         margin: 0 auto;
+    }
+    .features-table .api {
+        padding-top: 17px;
+    }
+    .features-table .row > div:first-child i {
+        margin-top: -10px;
     }
 }
