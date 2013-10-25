@@ -440,25 +440,32 @@ a:focus{
     margin: 0 0 1px 1px;
     height: 75px;
 }
-.features-table .mobile-os, .features-table .api{
+.features-table .row:first-child div.cell div.mobile-os, .features-table .row .api{
     font-size: 8px;
     color: #3D3D3D;
-    padding-top: 60px;
+    padding-top: 57px;
+    text-shadow: none;
 }
-.features-table .api{
+.features-table .row .cell div.api{
     padding-top: 0;
 }
 .features-table .row > div:first-child{
-    color: rgb(61,61,61);
+    color: #888;
 }
 .features-table .row:first-child{
     font-size: 9px
+}
+.features-table .row:first-child .cell > div:first-child{
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2px;
+    text-shadow: 1px 1px 5px #555;
 }
 .features-table .row div:first-child i{
     font-size: 35px;
     display: inline-block;
     margin-top: 0;
-    text-shadow: 0 1px 3px #B8B8B8;
+    text-shadow: 0 1px 3px #FDFDFD;
 }
 .features-table .row:first-child .cell, .features-table .row:last-child .cell{
     color: #FFF;
