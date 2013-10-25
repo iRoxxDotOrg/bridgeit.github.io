@@ -419,4 +419,151 @@ a:focus{
     .main{
         margin-top: 40px;
     }
+
+    /* main */
+    .main h1{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        color: #DD5734;
+        font-size: 40px;
+    }
+
+}
+
+/* features */
+.features-table{
+    margin: 20px;
+}
+.features-table .col-xs-1{
+    padding: 0;
+}
+.features-table .row .cell{
+    text-align: center;
+    margin: 0 0 1px 1px;
+    height: 75px;
+}
+.features-table .mobile-os, .features-table .api{
+    font-size: 8px;
+    color: #3D3D3D;
+    padding-top: 60px;
+}
+.features-table .api{
+    padding-top: 0;
+}
+.features-table .row > div:first-child{
+    color: rgb(61,61,61);
+}
+.features-table .row:first-child{
+    font-size: 9px
+}
+.features-table .row div:first-child i{
+    font-size: 35px;
+    display: inline-block;
+    margin-top: 0;
+    text-shadow: 0 1px 3px #B8B8B8;
+}
+.features-table .row:first-child .cell, .features-table .row:last-child .cell{
+    color: #FFF;
+    background-color: rgb(192,192,192);
+    padding: 2px;
+}
+.features-table .row:last-child a{
+    color: #DADADA;
+}
+.features-table .row .cell a:hover i{
+    text-shadow: 0 0 16px #B12906;
+}
+.features-table .row:first-child .cell i, .features-table .row:last-child .cell i{
+    font-size: 30px;
+    text-shadow: 1px 1px 5px #555;
+    margin-bottom: 1px;
+    display: inline-block;
+    line-height: 2em;
+}
+.features-table .row .cell i.aug{
+    font-size: 46px;
+    margin-top: -26px;
+}
+.features-table .row.odd .cell{
+    background-color: rgb(234,234,234);
+    padding-top: 20px;
+}
+.features-table .row.even .cell{
+    background-color: rgb(245,245,245);
+    padding-top: 20px;
+}
+.features-table .yes{
+    border: 3px solid rgb(152,152,152);
+    border-radius: 12px;
+    width: 25px; height: 25px;
+    margin: 0 auto;
+    background: rgb(174,231,175); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(174,231,175,1) 0%, rgba(64,154,67,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,231,175,1)), color-stop(100%,rgba(64,154,67,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(174,231,175,1) 0%,rgba(64,154,67,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(174,231,175,1) 0%,rgba(64,154,67,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(174,231,175,1) 0%,rgba(64,154,67,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(174,231,175,1) 0%,rgba(64,154,67,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aee7af', endColorstr='#409a43',GradientType=0 ); /* IE6-9 */
+}
+.features-table .no{
+    border: 3px solid rgb(152,152,152);
+    border-radius: 12px;
+    width: 25px; height: 25px;
+    margin: 0 auto;
+    background-color: rgb(214,214,214);
+    -moz-box-shadow:      1px 1px 3px 2px #BEBEBE;
+    -webkit-box-shadow:   1px 1px 3px 2px #BEBEBE;
+    box-shadow:           1px 1px 3px 2px #BEBEBE;
+}
+.features-table .row .cell i.contact-at{
+    font-style: normal;
+    position: absolute;
+    margin-left: 6px;
+    font-size: 16px;
+    margin-top: 34px;
+    padding: 0;
+    line-height: 0;
+}
+.features-table .row .cell i.icon-picture{
+    font-style: normal;
+    position: absolute;
+    margin-left: 2px;
+    font-size: 14px;
+    margin-top: 7px;
+    padding: 0;
+}
+@media screen and (max-width: 768px) {
+    .features-table .row .cell{
+        height: 50px;
+    }
+    .features-table .row:first-child > div > .cell > div:first-child{
+        display: none;
+    }
+    .features-table .row:first-child .cell i, .features-table .row:last-child .cell i {
+        font-size: 20px;
+    }
+    .features-table .row .cell i.contact-at{
+        margin-left: -4px;
+        font-size: 8px;
+        margin-top: 14px;
+    }
+    .features-table .row .cell i.aug{
+        font-size: 33px;
+        margin-top: -18px;
+    }
+    .features-table .row .cell i.icon-picture{
+        margin-left: -4px;
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    .features-table .row div:first-child i {
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .features-table .yes, .features-table .no {
+        width: 15px;
+        height: 15px;
+        margin: 0 auto;
+    }
 }
