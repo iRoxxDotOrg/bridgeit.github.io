@@ -587,4 +587,7 @@ a:focus{
     .features-table .row > div:first-child i {
         margin-top: -10px;
     }
+    .features-table .row a{
+        color: #888;
+    }
 }
