@@ -591,3 +591,8 @@ a:focus{
         color: #888;
     }
 }
+.section{ 
+    background-image: url(../images/divider-dots.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-top: 90px;}

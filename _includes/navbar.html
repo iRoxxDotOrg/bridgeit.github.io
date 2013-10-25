@@ -14,10 +14,10 @@
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a onclick="$('html, body').animate({scrollTop: $('.features').offset().top }, 1000);" href="#features" tabindex="5">Features</a></li>
-                                    <li><a href="demos.html" tabindex="6">Demos</a></li>
-                                    <li><a href="getting-started.html" tabindex="7">Get Started</a></li>
-                                    <li><a href="downloads.html" tabindex="8">Downloads</a></li>
+                                    <li><a onclick="scrollToSection('features');" tabindex="5">Features</a></li>
+                                    <li><a onclick="scrollToSection('demos');" tabindex="6">Demos</a></li>
+                                    <li><a onclick="scrollToSection('gettingstarted');" tabindex="7">Get Started</a></li>
+                                    <li><a onclick="scrollToSection('downloads');" tabindex="8">Downloads</a></li>
                                     <li class="dropdown-menu-summary">
                                       Lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum lorem ipsum jetsum
                                     </li>
@@ -60,3 +60,9 @@
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
+            <script type="text/javascript">
+            function scrollToSection(section){
+                $('html, body').animate({scrollTop: $('#'+section).offset().top, easing: 'easeout'}, 1000); 
+                window.location.hash = section;
+            }
+            </script>
