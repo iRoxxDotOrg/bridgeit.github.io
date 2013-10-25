@@ -602,3 +602,7 @@ pre {
     background-color: inherit;
     border: none;
 }
+.app-stores{
+    padding: 20px;
+    text-align: center;
+}
