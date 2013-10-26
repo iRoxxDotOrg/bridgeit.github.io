@@ -594,3 +594,6 @@ pre {
     padding: 20px;
     text-align: center;
 }
+#demoQR, #demoJQMQR{
+    text-align: center;
+}
