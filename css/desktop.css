@@ -24,37 +24,19 @@ a:focus{
     background-color: #FFF;
 }
 .navbar-brand {
-    background-image: url(../images/bridgeit-md-concept2-gray.png);
+    background-image: url(../images/bridgeit-logo.png);
     background-repeat: no-repeat;
     display: inline-block;
-    width: 300px;
+    width: 332px;
     height: 100px;
-    background-size: 62%;
-    background-position: 0 4px;
-}
-.navbar-brand.c0{
-    background-size: 71%;
-    background-position: 15px 4px;
-}
-.navbar-brand.c1 {
-    background-image: url(../images/bridgeit-cs-concept1.png);
-    background-size: 73%;
-}
-
-.navbar-brand.c2 {
-    background-image: url(../images/bridgeit-cs-concept4.png);
-    background-size: 92%;
-    background-position: 15px 13px;
-}
-.navbar-brand.c3 {
-    background-image: url(../images/bridgeit-cs-concept6.png);
-    background-size: 92%;
-    background-position: 15px 13px;
+    background-size: 93%;
+    background-position: 15px 9px;
 }
 @media (max-width: 768px) {
-    .navbar-brand.c0, .navbar-brand.c1, .navbar-brand.c2{
-        width: 250px;
-        background-position: 15px 9px;
+    .navbar-brand {
+        width: 300px;
+        background-size: 85%;
+        background-position: 15px 16px;
     }
 }
 .navbar-default .navbar-nav > li > a {
@@ -136,6 +118,9 @@ a:focus{
 }
 .items .more:hover{
     color: #39B992;
+}
+.items img{
+    text-align: center;
 }
 .items .more em{
     font-style: italic;
@@ -429,6 +414,9 @@ a:focus{
 /* features */
 .features-table{
     margin: 20px;
+}
+.features-table .col-sm-1 {
+    width: 10%;
 }
 .features-table .col-xs-1, .features-table .col-xs-2, .features-table .col-xs-3, .features-table .col-xs-4,
 .features-table .col-sm-1, .features-table .col-sm-2{
