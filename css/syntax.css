@@ -1,25 +1,19 @@
 
 .highlight .hll { background-color: #333333 }
 .highlight  { 
-
-background: #111111; 
-
-color: #ffffff ;
-
-padding: 0.2em 0.9em;
-  margin-bottom: 1em;
+	background: #666; 
+	color: #ffffff;
+	padding: 0.2em 0.9em;
+  	margin-bottom: 1em;
 	font: normal normal normal 115%/normal 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important;
-  line-height: 1.1em;
-  overflow: auto;
+  	line-height: 1.1em;
+  	overflow: auto;
 	font-size: 1.0em;
 	border: 1px solid #CCC;
-	
 	-moz-border-radius:7px;
 	-webkit-border-radius:7px;
 	border-radius:7px;
-text-shadow: none;
-
-
+	text-shadow: none;
 }
 
 
@@ -29,10 +23,9 @@ code, pre {
 	margin: .5em 0 .5em 0;
 }
 
-.highlight span
-{
-font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
-font-size:14px;
+.highlight span{
+	font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+	font-size:14px;
 }
 
 .highlight .hll { background-color: #49483e }
@@ -59,7 +52,7 @@ font-size:14px;
 .highlight .ld { color: #e6db74 } /* Literal.Date */
 .highlight .m { color: #ae81ff } /* Literal.Number */
 .highlight .s { color: #e6db74 } /* Literal.String */
-.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .na { color: #E9E9E9 } /* Name.Attribute */
 .highlight .nb { color: #f8f8f2 } /* Name.Builtin */
 .highlight .nc { color: #a6e22e } /* Name.Class */
 .highlight .no { color: #66d9ef } /* Name.Constant */
@@ -69,9 +62,9 @@ font-size:14px;
 .highlight .nf { color: #a6e22e } /* Name.Function */
 .highlight .nl { color: #f8f8f2 } /* Name.Label */
 .highlight .nn { color: #f8f8f2 } /* Name.Namespace */
-.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .nx { color: #FAB59E } /* Name.Other */
 .highlight .py { color: #f8f8f2 } /* Name.Property */
-.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nt { color: #FAB59E } /* Name.Tag */
 .highlight .nv { color: #f8f8f2 } /* Name.Variable */
 .highlight .ow { color: #f92672 } /* Operator.Word */
 .highlight .w { color: #f8f8f2 } /* Text.Whitespace */
