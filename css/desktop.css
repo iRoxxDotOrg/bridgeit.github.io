@@ -522,12 +522,29 @@ a:focus{
     padding: 0;
     line-height: 0;
 }
+#carousel i.contact-at{
+    font-style: normal;
+    position: absolute;
+    margin-left: 23px;
+    font-size: 35px;
+    margin-top: 58px;
+    padding: 0;
+    line-height: 0;
+}
 .features-table .row .cell i.icon-picture{
     font-style: normal;
     position: absolute;
     margin-left: 2px;
     font-size: 14px;
     margin-top: 7px;
+    padding: 0;
+}
+#carousel i.icon-picture{
+    font-style: normal;
+    position: absolute;
+    margin-left: 7px;
+    font-size: 23px;
+    margin-top: 33px;
     padding: 0;
 }
 @media screen and (max-width: 768px) {
