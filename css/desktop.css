@@ -825,4 +825,12 @@ pre {
     }
 
 }
+.community-link{
+    text-align: right;
+}
+.community-link .text-link{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+}
 
