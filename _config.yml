@@ -66,3 +66,4 @@ redcloth:
   hard_breaks: true
 
 forums_url: http://54.244.249.23/forum/
+api_docs_url: http://bridgeit.github.io/bridgeit.js/docs/html/

@@ -4,20 +4,21 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-list-ul"></span>
                         </button>
-                        <a class="navbar-brand" href="#" tabindex="0"></a>
+                        <a class="navbar-brand" href="index.html" tabindex="0"></a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="dropdown active">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" tabindex="1">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="bridgeit.html" tabindex="1"
+                                    onclick="window.location.href='bridgeit.html';">
                                     BridgeIt
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
                                     {% if include.category == "bridgeit" %}
                                     <li><a onclick="scrollToSection('features');" tabindex="5">Features</a></li>
-                                    <li><a onclick="scrollToSection('features');" tabindex="6">Demos</a></li>
-                                    <li><a onclick="scrollToSection('features');" tabindex="7">Downloads</a></li>
+                                    <li><a onclick="scrollToSection('demos');" tabindex="6">Demos</a></li>
+                                    <li><a onclick="scrollToSection('downloads');" tabindex="7">Downloads</a></li>
                                     {% else %}
                                     <li><a href="bridgeit.html#features" tabindex="5">Features</a></li>
                                     <li><a href="bridgeit.html#demos" tabindex="6">Demos</a></li>
@@ -29,7 +30,8 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#about" class="dropdown-toggle" data-toggle="dropdown" tabindex="2">Community<b class="caret"></b></a>
+                                <a href="community.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="2"
+                                    onclick="window.location.href='community.html';">Community<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ site.forums_url }}" tabindex="8">Forums</a></li>
                                     <li><a href="http://github.io/bridgeit/" tabindex="9">GitHub</a></li>
@@ -41,7 +43,8 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#contact" class="dropdown-toggle" data-toggle="dropdown" tabindex="3">Help<b class="caret"></b></a>
+                                <a href="help.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="3"
+                                    onclick="window.location.href='help.html';">Help<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     {% if include.category == 'help' %}
                                     <li><a onclick="scrollToSection('gettingstarted');" tabindex="12">Get Started</a></li>
@@ -58,7 +61,8 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" tabindex="4">About <b class="caret"></b></a>
+                                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="4"
+                                    onclick="window.location.href='about.html';">About <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     {% if include.category == 'about' %}
                                     <li><a onclick="scrollToSection('icesoft');" tabindex="14">ICEsoft</a></li>

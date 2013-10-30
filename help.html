@@ -11,7 +11,11 @@
         <div id="wrap">
             {% include navbar.html category="help" %}
             {% include carousel.html %}
-            {% include getting-started.html %}
+            <div class="main">
+                {% include getting-started.html %}
+                {% include api-docs.html %}
+                {% include contact-us.html %}
+            </div>
          </div>
         {% include footer.html %}
         {% include js.html %}
