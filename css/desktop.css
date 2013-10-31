@@ -618,7 +618,7 @@ a:focus{
 .grid .row .cell div.api{
     padding-top: 0;
 }
-.grid .row > div:first-child{
+#features .grid .row > div:first-child{
     color: #888;
 }
 .grid .row:first-child{
@@ -628,6 +628,25 @@ a:focus{
     font-size: 12px;
     line-height: 14px;
     margin-top: 2px;
+}
+@media screen and (min-width: 768px) {
+    .grid .row:first-child .cell > div:first-child{
+        text-shadow: 1px 1px 5px #555;
+    }
+    #features .grid .row:first-child .cell > div.mobile-os{
+        text-shadow: none;
+    }
+    .grid .row:first-child .cell, .grid .row:last-child .cell{
+        color: #FFF;
+    }
+    .grid .row:first-child .cell i, .grid .row:last-child .cell i{
+        text-shadow: 1px 1px 5px #555;
+    }
+}
+#features .grid .row:first-child .cell, #features .grid .row:last-child .cell{
+    color: #FFF;
+}
+#features .grid .row:first-child .cell i, #features .grid .row:last-child .cell i{
     text-shadow: 1px 1px 5px #555;
 }
 .grid .row div:first-child i{
@@ -637,7 +656,6 @@ a:focus{
     text-shadow: 0 1px 3px #FDFDFD;
 }
 .grid .row:first-child .cell, .grid .row:last-child .cell{
-    color: #FFF;
     background-color: rgb(192,192,192);
     padding: 2px;
 }
@@ -649,11 +667,11 @@ a:focus{
 }
 .grid .row:first-child .cell i, .grid .row:last-child .cell i{
     font-size: 30px;
-    text-shadow: 1px 1px 5px #555;
     margin-bottom: 1px;
     display: inline-block;
     line-height: 2em;
 }
+
 .grid .row .cell i.aug{
     font-size: 46px;
     margin-top: -26px;
@@ -740,12 +758,16 @@ a:focus{
     .grid .row div:first-child .cell {
         padding-top: 2px;
     }
+    #apidocs .grid .row div:nth-child(2) .cell {
+        padding-top: 0;
+        line-height: 50px;
+    }
     .grid .row div:first-child .cell > div:first-child{
         font-size: 10px;
         margin-bottom: 8px;
     }
     .grid .row:first-child > div > .cell > div:first-child{
-        display: none;
+        /*display: none;*/
     }
     .grid .row:first-child .cell i, .grid .row:last-child .cell i {
         font-size: 20px;
@@ -781,16 +803,19 @@ a:focus{
     .grid .row a{
         color: #888;
     }
+    #apidocs .grid .cell i, #apidocs .grid .cell div{
+        color: #888;
+    }
 }
 .section{ 
     background-image: url(../images/divider-dots.png);
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: 50% 70px;
     margin-top: -90px;
     padding-top: 90px;
     padding-bottom: 20px;
 }
-.section:last-child{
+.section:first-child{
     background-image: none;
 }
 pre {

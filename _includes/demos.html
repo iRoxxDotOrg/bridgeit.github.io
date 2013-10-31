@@ -5,12 +5,14 @@
 	        <p>
 	            The BridgeIt mobile demo demonstrates the various native integrations available. Have a mobile device? Try it out. Scan the QR Code (right) with your device or go to the demo.
 	        </p>
-	        <a class="more" href="http://bridgeit.github.com/demo/">View the Mobile Demo&nbsp;&raquo;</a>
+	        <a class="more" href="{{ site.demo_url }}">View the Mobile Demo&nbsp;&raquo;</a>
 	    </div>
 	    <div class="col-xs-6" style="text-align:right">
 	    	<span class="demo-qr-sheen">
 	    		<div></div>
-		        <img src="images/demo-qr.png" style="background-color: #E35B3C;" class="demo-qr"/>
+		        <a href="{{ site.demo_url }}">
+		        	<img src="images/demo-qr.png" style="background-color: #E35B3C;" class="demo-qr"/>
+		        </a>
 		    </span>
 	    </div>
 	</div>
@@ -18,7 +20,9 @@
 		 <div class="col-xs-6" style="text-align:left">
 		 	<span class="demo-qr-sheen">
 	    		<div></div>
-		        <img src="images/demo-jqm-qr.png" style="background-color: #727272;" class="demo-qr"/>
+		        <a href="{{ site.jqmdemo_url }}">
+		        	<img src="images/demo-jqm-qr.png" style="background-color: #727272;" class="demo-qr"/>
+		        </a>
 		    </span>
 	    </div>
 	    <div class="col-xs-6">
@@ -26,7 +30,7 @@
 	        <p>
 	            The BridgeIt jQuery Mobile demo demonstrates the various native integrations available in a jQuery Mobile app. Have a mobile device? Try it out. Scan the QR Code (left) with your device or go to the demo.
 	        </p>
-	        <a class="more" href="http://bridgeit.github.com/demo-jqm/">View the jQuery Mobile Demo&nbsp;&raquo;</a>
+	        <a class="more" href="{{ site.jqmdemo_url }}">View the jQuery Mobile Demo&nbsp;&raquo;</a>
 	    </div>
 	</div>
 </div>

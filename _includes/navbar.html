@@ -58,9 +58,9 @@
                                     onclick="window.location.href='community.html';">Community<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="{{ site.forums_url }}" tabindex="8">Forums</a></li>
-                                    <li><a href="http://github.io/bridgeit/" tabindex="9">GitHub</a></li>
-                                    <li><a href="https://twitter.com/BridgeItApp" tabindex="10">Twitter</a></li>
-                                    <li><a href="#" tabindex="11">Facebook</a></li>
+                                    <li><a href="{{ site.github_url}}" tabindex="9">GitHub</a></li>
+                                    <li><a href="{{ site.twitter_url}}" tabindex="10">Twitter</a></li>
+                                    <li><a href="{{ site.facebook_url }}" tabindex="11">Facebook</a></li>
                                     <li class="dropdown-menu-summary">
                                       BridgeIt is free to use, and available on GitHub. <br/>Connect with BridgeIt on Twitter and Facebook.
                                     </li>
@@ -72,11 +72,11 @@
                                 <ul class="dropdown-menu">
                                     {% if include.category == 'help' %}
                                     <li><a onclick="scrollToSection('gettingstarted');" tabindex="12">Get Started</a></li>
-                                    <li><a href="https://github.com/bridgeit/bridgeit.js/wiki" tabindex="13">Docs</a></li>
+                                    <li><a href="{{ site.github_url}}bridgeit.js/wiki" tabindex="13">Docs</a></li>
                                     <li><a onclick="scrollToSection('contactus');" tabindex="14">Contact Us</a></li>
                                     {% else %}
                                     <li><a href="help.html#gettingstarted" tabindex="12">Get Started</a></li>
-                                    <li><a href="https://github.com/bridgeit/bridgeit.js/wiki" tabindex="13">Docs</a></li>
+                                    <li><a href="{{ site.github_url}}bridgeit.js/wiki" tabindex="13">Docs</a></li>
                                     <li><a href="help.html#contactus" tabindex="14">Contact Us</a></li>
                                     {% endif %}
                                     <li class="dropdown-menu-summary">
