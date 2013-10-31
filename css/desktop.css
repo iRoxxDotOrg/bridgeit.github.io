@@ -538,6 +538,17 @@ a:focus{
     }
 }
 
+#features .augmented-reality-icon{
+    background-image: url(../images/augmented-reality-icon-for-carousel.png);
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 41px;
+    margin: 0 auto;
+    background-position: 5px 0;
+}
+
 .grid{
     margin: 15px;
 }
