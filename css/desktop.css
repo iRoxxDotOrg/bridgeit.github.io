@@ -378,9 +378,9 @@ a:focus{
         text-align: left;
     }
     .jumbotron img{
-        width: 247px;
-        margin-top: 30px;
-        margin-left: -69px;
+        width: 223px;
+        margin-top: 9px;
+        margin-left: -50px;    
     }
     .jumbotron .bridgeit-font{
         font-size: 27px;
@@ -437,12 +437,13 @@ a:focus{
     }
     .dropdown-menu-summary {
         border-left: 1px solid #FFF;
-        font-size: 9px;
+        font-size: 12px;
         color: #FFF;
         padding: 1px 10px;
-        line-height: 12px;
-        max-width: 300px;
+        line-height: 14px;
+        max-width: 360px;
         text-align: left;
+        margin-top: -4px;
         vertical-align: middle;
     }
     .jumbotron {
@@ -474,9 +475,8 @@ a:focus{
         text-align: left;
     }
     .jumbotron img{
-         width: 412px;
-         margin-top: -30px;
-         margin-left: -71px;
+        margin-top: -41px;
+        margin-left: -39px;
     }
     #carousel{
         background-color: rgba(0,0,0,0.2);
@@ -654,6 +654,11 @@ a:focus{
     margin-top: 58px;
     padding: 0;
     line-height: 0;
+}
+#carousel .augmented-reality-icon{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -10px;
 }
 .grid .row .cell i.icon-picture{
     font-style: normal;
