@@ -250,14 +250,22 @@ a:focus{
 .items{
     background-color: #FFF;
 }
-.items .row{
-    padding: 20px 0;
+.top-divider{
     background-image: url(../images/divider-dots.png);
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: 50% 0%;
 }
-.items .row:last-child{
+.section.top-divider{
+    background-position: 50% 70px;
+}
+.items .grid .row{
     background-image: none;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    .items .row:first-child{
+        padding-top: 0;
+    }
 }
 .items{
     font-weight: 300;
@@ -280,6 +288,12 @@ a:focus{
     float: right;
     font-weight: normal;
     margin-top: 15px;
+}
+.items > .row{
+    padding: 20px 0;
+}
+.section:first-child > .row:first-child h2{
+    padding-top: 20px;
 }
 @media screen and (max-width: 768px) {
     .items h3{
@@ -431,6 +445,9 @@ a:focus{
     .links div > a{ display: none; }
 }
 @media screen and (min-width: 768px) {
+    #featureitems{
+        padding-top: 20px;
+    }
     .navbar-nav {
         float: right;
     }
@@ -808,15 +825,9 @@ a:focus{
     }
 }
 .section{ 
-    background-image: url(../images/divider-dots.png);
-    background-repeat: no-repeat;
-    background-position: 50% 70px;
     margin-top: -90px;
     padding-top: 90px;
     padding-bottom: 20px;
-}
-.section:first-child{
-    background-image: none;
 }
 pre {
     line-height: normal;
