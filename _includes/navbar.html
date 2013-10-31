@@ -16,13 +16,37 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     {% if include.category == "bridgeit" %}
-                                    <li><a onclick="scrollToSection('features');" tabindex="5">Features</a></li>
-                                    <li><a onclick="scrollToSection('demos');" tabindex="6">Demos</a></li>
-                                    <li><a onclick="scrollToSection('downloads');" tabindex="7">Downloads</a></li>
+                                    <li>
+                                        <a onclick="scrollToSection('features');" tabindex="5">
+                                            <i class="icon-th-list"></i>Features
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="scrollToSection('demos');" tabindex="6">
+                                            <i class="icon-play-circle"></i>Demos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="scrollToSection('downloads');" tabindex="7">
+                                            <i class="icon-download-alt"></i>Downloads
+                                        </a>
+                                    </li>
                                     {% else %}
-                                    <li><a href="bridgeit.html#features" tabindex="5">Features</a></li>
-                                    <li><a href="bridgeit.html#demos" tabindex="6">Demos</a></li>
-                                    <li><a href="bridgeit.html#downloads" tabindex="7">Downloads</a></li>
+                                    <li>
+                                        <a href="bridgeit.html#features" tabindex="5">
+                                            <i class="icon-th-list"></i>Features
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bridgeit.html#demos" tabindex="6">
+                                            <i class="icon-play-circle"></i>Demos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bridgeit.html#downloads" tabindex="7">
+                                            <i class="icon-download-alt"></i>Downloads
+                                        </a>
+                                    </li>
                                     {% endif %}
                                     <li class="dropdown-menu-summary">
                                       The easiest way for you to add powerful native capabilities to your HTML5 applications.

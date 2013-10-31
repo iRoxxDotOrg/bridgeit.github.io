@@ -92,6 +92,13 @@ a:focus{
     background-size: 93%;
     background-position: 0 9px;
 }
+.navbar a i{
+    margin-right: 5px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+}
 @media (max-width: 768px) {
     #wrap {
         min-height: 100%;
