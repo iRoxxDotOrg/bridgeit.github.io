@@ -870,6 +870,7 @@ pre {
         padding: 10px 15px;
         border-radius: 5px;
         width: 100%;
+        max-width: 150px;
     }
     .items .more {
         margin-top: 0;
