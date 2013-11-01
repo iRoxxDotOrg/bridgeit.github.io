@@ -687,7 +687,7 @@ a:focus{
 .grid .row:last-child a{
     color: #DADADA;
 }
-.grid .row .cell a:hover i{
+#features .grid .row .cell a:hover i, #apidocs .grid .row .cell a:hover i{
     text-shadow: 0 0 16px #B12906;
 }
 .grid .row:first-child .cell i, .grid .row:last-child .cell i{
