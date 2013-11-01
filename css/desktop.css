@@ -790,6 +790,15 @@ html.ie8 .features-fallback{
     margin-top: 33px;
     padding: 0;
 }
+html.ie8 #apidocs .grid{
+    display: none !important;
+}
+.apidocs-fallback{
+    display: none;
+}
+html.ie8 .apidocs-fallback{
+    display: block;
+}
 @media screen and (max-width: 768px) {
     .grid{
         margin: 0;
