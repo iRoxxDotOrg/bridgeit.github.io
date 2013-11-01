@@ -393,6 +393,14 @@ a:focus{
 #carousel h2{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+.carousel-caption {
+    right: 18%;
+    left: 18%;
+}
+#carousel .augmented-reality .feature h1{
+    font-size: 29px;
+    margin-bottom: 15px;
+}
 @media screen and (max-width: 768px) {
     .visible-xs{
         display: inline-block !important;
@@ -633,7 +641,7 @@ a:focus{
     text-shadow: none;
 }
 .grid .row .cell div.api{
-    padding-top: 0;
+    padding-top: 28px;
 }
 #features .grid .row > div:first-child{
     color: #888;
