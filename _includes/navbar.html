@@ -8,7 +8,7 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown active">
+                            <li class="dropdown {% if include.category == 'bridgeit' %}active{% endif %}">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="bridgeit.html" tabindex="1"
                                     onclick="window.location.href='bridgeit.html';">
                                     BridgeIt
@@ -53,7 +53,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown {% if include.category == 'community' %}active{% endif %}">
                                 <a href="community.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="2"
                                     onclick="window.location.href='community.html';">Community<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -66,7 +66,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown {% if include.category == 'help' %}active{% endif %}">
                                 <a href="help.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="3"
                                     onclick="window.location.href='help.html';">Help<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -84,7 +84,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown {% if include.category == 'about' %}active{% endif %}">
                                 <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="4"
                                     onclick="window.location.href='about.html';">About <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
