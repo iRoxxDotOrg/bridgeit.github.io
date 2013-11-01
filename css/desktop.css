@@ -387,6 +387,9 @@ a:focus{
 .contact .anchors i:hover{
     color: #F74E08;
 }
+html.ie8 #carousel{
+    display: none;
+}
 #carousel h1{
     font-family: GoodTimes, Arial;
 }
@@ -608,6 +611,16 @@ a:focus{
         color: #DD5734;
         font-size: 40px;
     }
+}
+
+html.ie8 #features .grid{
+    display: none !important;
+}
+.features-fallback{
+    display: none;
+}
+html.ie8 .features-fallback{
+    display: block !important;
 }
 
 #features .augmented-reality-icon{
