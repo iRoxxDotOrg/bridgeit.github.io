@@ -59,10 +59,26 @@
                                 <a href="community.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="2"
                                     onclick="window.location.href='community.html';">Community</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{{ site.forums_url }}" tabindex="8">Forums</a></li>
-                                    <li><a href="{{ site.github_url}}" tabindex="9">GitHub</a></li>
-                                    <li><a href="{{ site.twitter_url}}" tabindex="10">Twitter</a></li>
-                                    <li><a href="{{ site.facebook_url }}" tabindex="11">Facebook</a></li>
+                                    <li>
+                                        <a href="{{ site.forums_url }}" tabindex="8">
+                                            <i class="icon-comments-alt"></i>Forums
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ site.github_url}}" tabindex="9">
+                                            <i class="icon-github"></i>GitHub
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ site.twitter_url}}" tabindex="10">
+                                            <i class="icon-twitter-sign"></i>Twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ site.facebook_url }}" tabindex="11">
+                                            <i class="icon-facebook-sign"></i>Facebook
+                                        </a>
+                                    </li>
                                     <li class="dropdown-menu-summary">
                                       BridgeIt is free to use, and available on GitHub. <br/>Connect with BridgeIt on Twitter and Facebook.
                                     </li>
@@ -74,13 +90,37 @@
                                     onclick="window.location.href='help.html';">Help</a>
                                 <ul class="dropdown-menu">
                                     {% if include.category == 'help' %}
-                                    <li><a onclick="scrollToSection('gettingstarted');" tabindex="12">Get Started</a></li>
-                                    <li><a href="{{ site.github_url}}bridgeit.js/wiki" tabindex="13">Docs</a></li>
-                                    <li><a onclick="scrollToSection('contactus');" tabindex="14">Contact Us</a></li>
+                                    <li>
+                                        <a onclick="scrollToSection('gettingstarted');" tabindex="12">
+                                            <i class="icon-arrow-right"></i>Get Started
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ site.github_url}}bridgeit.js/wiki" tabindex="13">
+                                            <i class="icon-book"></i>Docs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="scrollToSection('contactus');" tabindex="14">
+                                            <i class="icon-bullhorn"></i>Contact Us
+                                        </a>
+                                    </li>
                                     {% else %}
-                                    <li><a href="help.html#gettingstarted" tabindex="12">Get Started</a></li>
-                                    <li><a href="{{ site.github_url}}bridgeit.js/wiki" tabindex="13">Docs</a></li>
-                                    <li><a href="help.html#contactus" tabindex="14">Contact Us</a></li>
+                                    <li>
+                                        <a href="help.html#gettingstarted" tabindex="12">
+                                            <i class="icon-arrow-right"></i>Get Started
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ site.github_url}}bridgeit.js/wiki" tabindex="13">
+                                            <i class="icon-book"></i>Docs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="help.html#contactus" tabindex="14">
+                                            <i class="icon-bullhorn"></i>Contact Us
+                                        </a>
+                                    </li>
                                     {% endif %}
                                     <li class="dropdown-menu-summary">
                                       BridgeIt is as easy as it gets. <br/>Simply add bridgeit.js to your web page to get started. 
@@ -93,13 +133,37 @@
                                     onclick="window.location.href='about.html';">About </a>
                                 <ul class="dropdown-menu">
                                     {% if include.category == 'about' %}
-                                    <li><a onclick="scrollToSection('icesoft');" tabindex="14">ICEsoft</a></li>
-                                    <li><a onclick="scrollToSection('license');" tabindex="15">License</a></li>
-                                    <li><a onclick="scrollToSection('privacy');" tabindex="16">Privacy</a></li>
+                                    <li>
+                                        <a onclick="scrollToSection('icesoft');" tabindex="14">
+                                            <i><img src="images/icesoft-emblem.png" style="width: 18px;margin-top: -10px"/></i>ICEsoft
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="scrollToSection('license');" tabindex="15">
+                                            <i class="icon-legal"></i>License
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onclick="scrollToSection('privacy');" tabindex="16">
+                                            <i class="icon-asterisk"></i>Privacy
+                                        </a>
+                                    </li>
                                     {% else %}
-                                    <li><a href="about.html#icesoft" tabindex="14">ICEsoft</a></li>
-                                    <li><a href="about.html#license" tabindex="15">License</a></li>
-                                    <li><a href="about.html#privacy" tabindex="16">Privacy</a></li>
+                                    <li>
+                                        <a href="about.html#icesoft" tabindex="14">
+                                            <i><img src="images/icesoft-emblem.png" style="width: 18px;margin-top: -10px"/></i>ICEsoft
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html#license" tabindex="15">
+                                            <i class="icon-legal"></i>License
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html#privacy" tabindex="16">
+                                            <i class="icon-asterisk"></i>Privacy
+                                        </a>
+                                    </li>
                                     {% endif %}
                                     
                                     <li class="dropdown-menu-summary">
