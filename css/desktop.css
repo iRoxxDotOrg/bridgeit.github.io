@@ -192,16 +192,6 @@ p{
         max-width: 900px;
     }
 }
-@media (min-width: 1400px) {
-    .main .container {
-        max-width: 1000px;
-    }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 970px;
-  }
-}
 .navbar-default .navbar-nav > li > a {
     font-size: 20px;
     color: rgb(119,120,120);
@@ -265,7 +255,7 @@ p{
     background-position: 50% 0%;
 }
 .section.top-divider{
-    background-position: 50% 70px;
+    background-position: 50% 63px;
 }
 .items .grid .row{
     background-image: none;
@@ -291,7 +281,7 @@ p{
     margin-top: 15px;
 }
 .items > .row{
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .section:first-child > .row:first-child h2{
     padding-top: 20px;
@@ -868,7 +858,7 @@ html.ie8 .apidocs-fallback{
 .section{ 
     margin-top: -90px;
     padding-top: 90px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 pre {
     line-height: normal;
