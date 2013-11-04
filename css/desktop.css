@@ -56,6 +56,7 @@ body, h1, h2, h3, h4{
 h2, .h2 {
     font-size: 24px;
     font-weight: 300;
+    color: #414141;
 }
 h3, .h3{
     font-size: 18px;
@@ -73,6 +74,13 @@ a:focus{
 }
 .navbar{
     min-height: 100px;
+}
+p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    text-shadow: none;
+    color: #8D8B8B;
 }
 @media (min-width: 768px) {
     .navbar-nav > li > a {
@@ -210,11 +218,12 @@ a:focus{
     padding: 6px 20px;
     font-size: 16px;
 }
-
+.jumbotron, .jumbotron p {
+    color: #FFF;
+}
 .jumbotron {
     font-size: 17px;
     background-color: transparent;
-    color: #FFF;
     text-shadow: 1px 1px 1px rgba(157,108,78,0.9);
 }
 .jumbotron .btn{
@@ -273,14 +282,6 @@ a:focus{
 .items h2{
     margin-top: 0;
     margin-bottom: 14px;
-    color: #414141;
-}
-.items p{
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 300;
-    text-shadow: none;
-    color: #8D8B8B;
 }
 .items .more{
     color: #DD5734;
@@ -330,8 +331,8 @@ a:focus{
 .links, .links a{
     color: #FFF;
 }
-.links a:hover{
-    color: #FFC484;
+.links a:hover, .dropdown-menu>li>a:hover{
+    color: #FCE9D5;
 }
 .links, .contact{
     font-size: 12px;
@@ -394,7 +395,7 @@ html.ie8 #carousel{
     font-family: GoodTimes, Arial;
 }
 #carousel h2{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .carousel-caption {
     right: 18%;
@@ -532,7 +533,6 @@ html.ie8 #carousel{
 
     }
     .jumbotron .container{
-        margin-left: 0;
         text-align: right;
         min-height: 320px;
     }
@@ -582,7 +582,10 @@ html.ie8 #carousel{
     #carousel h1, #carousel h2{
         margin-top: 0px;
     }
-    #carousel h2{ font-size: 18px }
+    #carousel h2{ 
+        font-size: 22px;
+        color: #FFF;
+    }
     #carousel i{
         margin-right: 40px;
         font-size: 92px;
@@ -595,13 +598,16 @@ html.ie8 #carousel{
         line-height: 40px;
     }
     .carousel-control.left, .carousel-control.right{
-        padding-top: 42px;
+        padding-top: 36px;
         background-image: none;
-        opacity: 0.8;
+        color: #727272;
+        text-shadow: 0 0 11px #949494 !important;
+    }
+    .carousel-control:hover{
+        color: #5F5F5F;
     }
     .carousel-control > span{
-        font-size: 36px;
-        text-shadow: 1px 1px 1px #769269;
+        font-size: 58px;
     }
     
     /* main */
