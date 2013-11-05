@@ -25,8 +25,6 @@ textile_ext:   textile
 excerpt_separator: "\n\n"
 
 safe:        false
-watch:       false    # deprecated
-server:      false    # deprecated
 host:        0.0.0.0
 port:        4000
 baseurl:     /
@@ -69,7 +67,6 @@ forums_url: http://www.bridgeit.mobi/forum/
 api_docs_url: http://bridgeit.github.io/bridgeit.js/docs/html/
 icesoft_url: http://www.icesoft.org
 os_license_url: http://www.apache.org/licenses/LICENSE-2.0/
-privacy_url: http://www.icesoft.org/java/about/privacy-policy.jsf
 twitter_url: https://twitter.com/BridgeItApp
 facebook_url: https://www.facebook.com/
 github_url: http://github.io/bridgeit/
