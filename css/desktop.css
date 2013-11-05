@@ -435,6 +435,10 @@ html.ie8 #carousel{
      .dropdown-menu-summary{
         display: none;
      }
+     .navbar-nav .open .dropdown-menu,
+     .navbar-nav .dropdown-menu{
+        display: none;
+     }
      .jumbotron {
         padding: 0;
         text-align: left;

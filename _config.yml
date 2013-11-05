@@ -63,7 +63,7 @@ kramdown:
 redcloth:
   hard_breaks: true
 
-forums_url: http://www.bridgeit.mobi/forum/
+forums_url: http://bridgeit.mobi/forum/
 api_docs_url: http://bridgeit.github.io/bridgeit.js/docs/html/
 icesoft_url: http://www.icesoft.org
 os_license_url: http://www.apache.org/licenses/LICENSE-2.0/
