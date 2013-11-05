@@ -328,7 +328,7 @@ p{
         line-height: 18px;
     }
 }
-.items .more:hover{
+.items a:hover{
     color: #D83004;
     text-shadow: 1px 1px 1px #CCC;
 }
