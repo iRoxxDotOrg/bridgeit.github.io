@@ -219,7 +219,7 @@ p{
 }
 @media (min-width: 1150px) {
     .navbar-default .navbar-nav > li:first-child > a{
-        padding-left: 250px;
+        padding-left: 230px;
     }
     .navbar-default .navbar-nav>.dropdown:first-child>.caret,
     .navbar-default .navbar-nav>.dropdown:first-child>a:focus~.caret,
