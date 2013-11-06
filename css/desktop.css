@@ -6,6 +6,10 @@ body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
+/* IE10 hack */
+@-ms-viewport{
+    width: device-width;
+}
 
 /* Wrapper for page content to push down footer */
 #wrap {
