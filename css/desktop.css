@@ -632,7 +632,7 @@ html.ie8 #carousel{
     .carousel-control.left, .carousel-control.right{
         padding-top: 36px;
         background-image: none;
-        color: #727272;
+        color: #666;
         text-shadow: 0 0 11px #949494 !important;
     }
     .carousel-control:hover{
