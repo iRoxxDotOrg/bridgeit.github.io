@@ -1,6 +1,6 @@
 <div id="contactus" class="container section items top-divider">
 	<div class="hidden-xs">
-		<form>
+		<form id="contactUsForm">
 		    <div class="row">
 		    	<div class="col-sm-6">
 		    		<h2>Contact Us</h2>
@@ -12,7 +12,7 @@
 				    		<label for="name">Name:</label>
 				    	</div>
 				    	<div class="col-sm-8">
-				    		<input id="name" name="name" type="text"/>
+				    		<input id="name" name="name" type="text" maxlength="200"/>
 				    	</div>
 				    </div>
 				    <div class="row email">
@@ -20,7 +20,7 @@
 				    		<label for="email">Email:</label>
 				    	</div>
 				    	<div class="col-sm-8">
-				    		<input id="email" name="email" type="email"/>
+				    		<input id="email" name="email" type="email" maxlength="200"/>
 				    	</div>
 				    </div>
 		    	</div>
@@ -33,12 +33,12 @@
 		    		<label for="comment">Comment:</label>
 		    	</div>
 		    	<div class="col-sm-10">
-		    		<textarea id="comment" name="comment" rows="10"></textarea>
+		    		<textarea id="comment" name="comment" rows="10" maxlength="5000"></textarea>
 		    	</div>
 		    </div>
 		    <div class="row">
 		    	<div class="col-sm-12" style="text-align: right">
-		    		<button class="submit">Submit</button>
+		    		<button type="button" class="submit">Submit</button>
 		    	</div>
 		    </div>
 		</form>
@@ -56,14 +56,26 @@
 	    	</div>
 		</div>
 		<form>
-			<input id="name" name="name" type="text" placeholder="Name:"/>
-		    <input id="email" name="email" type="email" placeholder="Email:"/>
-		    <textarea id="comment" name="comment" rows="10" placeholder="Comment:"></textarea>
+			<input id="name" name="name" type="text" placeholder="Name:" maxlength="200"/>
+		    <input id="email" name="email" type="email" placeholder="Email:" maxlength="200"/>
+		    <textarea id="comment" name="comment" rows="10" placeholder="Comment:" maxlength="5000"></textarea>
 		    <div class="row">
 		    	<div class="col-xs-12" style="text-align: right">
-		    		<button class="submit">Submit</button>
+		    		<button type="button" class="submit">Submit</button>
 		    	</div>
 		    </div>
 		</form>
+		<script type="text/javascript">
+		jQuery( ".submit" ).click(function( event ) {
+			event.preventDefault();
+			jQuery.post( "http://bridgeit.mobi/site/contact/send", $( "#contactUsForm" ).serialize() )
+			.done(function() {
+			    alert( "Thank you, your comment has been submitted to the overlords." );
+			  })
+			  .fail(function() {
+			    alert("Sorry, there was an error submitting the form, please try again later.");
+			  })
+		});
+		</script>
 	</div>
 </div>
