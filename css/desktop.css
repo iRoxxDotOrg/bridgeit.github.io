@@ -548,13 +548,14 @@ html.ie8 #carousel{
         color: #FFF;
     }
     .dropdown-menu-summary {
-        border-left: 1px solid #FFF;
+        border-right: 1px solid #FFF;
         font-size: 12px;
         color: #FFF;
         padding: 1px 10px;
         line-height: 14px;
         max-width: 360px;
         text-align: left;
+        margin-right: 10px;
         margin-top: -4px;
         vertical-align: middle;
     }
