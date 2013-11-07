@@ -1018,4 +1018,9 @@ pre {
         padding: 0 10px;
     }
 }
+.navbar-handshake-icon{
+    width: 23px;
+    margin-top: -9px;
+    margin-left: -7px;
+}
 
