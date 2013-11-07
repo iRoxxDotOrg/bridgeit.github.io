@@ -68,13 +68,19 @@
 		<script type="text/javascript">
 		jQuery( ".submit" ).click(function( event ) {
 			event.preventDefault();
-			jQuery.post( "http://bridgeit.mobi/site/contact/send", $( "#contactUsForm" ).serialize() )
+			var req = jQuery.post( "http://bridgeit.mobi/site/contact/send", $( "#contactUsForm" ).serialize() )
 			.done(function() {
 			    alert( "Thank you, your comment has been submitted to the overlords." );
 			  })
 			  .fail(function() {
+			  	console.log(req);
 			    alert("Sorry, there was an error submitting the form, please try again later.");
-			  })
+			  });
+
+			  function validate(){
+			  	var valid = true;
+			  	if( document.)
+			  }
 		});
 		</script>
 	</div>
