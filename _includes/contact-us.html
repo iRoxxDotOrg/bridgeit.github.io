@@ -97,7 +97,9 @@
 
 		function fail(){
 			console.log(JSON.stringify(req));
-			alert("Sorry, there was an error submitting the form, please try again later.");
+			if( req.status == 500 ){
+				alert("Sorry, there was an error submitting the form, please try again later.");
+			}
 		}
 
 		function validate(form){
