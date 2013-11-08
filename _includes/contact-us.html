@@ -91,6 +91,8 @@
 		function success(){
 			console.log(JSON.stringify(req));
 			alert( "Thank you, your comment has been submitted to the overlords." );
+			jQuery('#contactUsForm1')[0].reset();
+			jQuery('#contactUsForm2')[0].reset();
 		}
 
 		function fail(){
@@ -111,6 +113,11 @@
 		  		|| form.email.value.length > 200 
 		  		|| form.comment.value.length > 5000 ){
 		  		alert("Sorry, there was an error processing your request.");
+		  		return false;
+		  	}
+		  	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		  	if( !re.test(form.email.value) ){
+		  		alert('Please check that the provided email is valid.');
 		  		return false;
 		  	}
 		  	return true;
