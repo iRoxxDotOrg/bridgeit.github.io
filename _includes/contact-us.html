@@ -67,6 +67,7 @@
 		</form>
 		<script type="text/javascript">
 		var req;
+		var messageGiven = false;
 		jQuery( "#contactUsForm1 .submit" ).click(function( event ) {
 			event.preventDefault();
 			var form = $("#contactUsForm1");
@@ -75,7 +76,9 @@
 				console.log(req);
 				req.done(success)
 				req.fail(fail);
+				req.always(always);
 			}
+			setTimeout(function(){ messageGiven = false; }, 5000);
 		});
 		jQuery( "#contactUsForm2 .submit" ).click(function( event ) {
 			event.preventDefault();
@@ -85,20 +88,41 @@
 				console.log(req);
 				req.done(success)
 				req.fail(fail);
+				req.always(always);
 			}
+			etTimeout(function(){ messageGiven = false; }, 5000);
 		});
 
 		function success(){
 			console.log(JSON.stringify(req));
-			alert( "Thank you, your comment has been submitted to the overlords." );
+			if( !messageGiven ){
+				alert( "Thank you, your comment has been submitted to the overlords." );
+			}
 			jQuery('#contactUsForm1')[0].reset();
 			jQuery('#contactUsForm2')[0].reset();
+			messageGiven = true;
 		}
 
 		function fail(){
 			console.log(JSON.stringify(req));
 			if( req.status == 500 ){
-				alert("Sorry, there was an error submitting the form, please try again later.");
+				if( !messageGiven ){
+					alert("Sorry, there was an error submitting the form, please try again later.");
+				}
+				messageGiven = true;
+			}
+		}
+
+		function always(){
+			console.log(JSON.stringify(req));
+			if( req.status == 500 ){
+				if( !messageGiven ){
+					alert("Sorry, there was an error submitting the form, please try again later.");
+				}
+				messageGiven = true;
+			}
+			else{
+				success();
 			}
 		}
 
