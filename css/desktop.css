@@ -98,7 +98,7 @@ p{
     background-image: url(../images/bridgeIt-logo.png);
     background-repeat: no-repeat;
     display: inline-block;
-    width: 315px;
+    width: 314px;
     height: 100px;
     background-size: 93%;
     background-position: 0 9px;
@@ -110,7 +110,21 @@ p{
     margin-left: -20px;
     margin-top: 5px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px){
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0px;
+        overflow: visible !important;
+    }
+}
+@media (max-width: 767px) {
+    .navbar > li{
+        float: none;
+    }
     #wrap {
         min-height: 100%;
         height: auto !important;
@@ -232,7 +246,7 @@ p{
         margin-left: 270px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-default .navbar-nav > li > a {
         color: #B4B4B4;
     }
@@ -322,7 +336,7 @@ p{
 .section:first-child > .row:first-child h2{
     padding-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .items h3{
         font-size: 18px;
         margin-bottom: 5px;
@@ -431,7 +445,7 @@ html.ie8 #carousel{
     font-size: 29px;
     margin-bottom: 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .visible-xs{
         display: inline-block !important;
     }
@@ -447,7 +461,7 @@ html.ie8 #carousel{
         padding: 0;
         text-align: left;
         margin-bottom: 0;
-        background-image: url(../images/banner-background-diagonal-lines.png);
+        background-image: url(../images/banner-background-diagonal.png);
         background-size: 1920px 488px;
         background-repeat: no-repeat;
         background-position: 50% 0;
@@ -842,7 +856,7 @@ html.ie8 #apidocs .grid{
 html.ie8 .apidocs-fallback{
     display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grid{
         margin: 0;
         width: 100%;
@@ -930,7 +944,7 @@ pre {
     border-bottom-left-radius: 165px 13px;
     border-bottom-right-radius: 165px 13px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .demo-qr{
         padding: 10px 15px;
         border-radius: 5px;
@@ -979,7 +993,7 @@ pre {
 #contactus .contact-us-btn{
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #contactus .contact-us-btn{
         width: 100%;
         max-width: 200px;
