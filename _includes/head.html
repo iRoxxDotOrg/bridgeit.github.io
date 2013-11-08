@@ -22,17 +22,23 @@
           </script>
         <![endif]-->
         <script type="text/javascript">
-        //IE 10 device width hack
-        (function() {
-            if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
-                var msViewportStyle = document.createElement("style");
-                msViewportStyle.appendChild(
-                    document.createTextNode("@-ms-viewport{width:auto!important}")
-                );
-                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-            }
-        })();
+            //IE 10 device width hack
+            (function() {
+                if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                    var msViewportStyle = document.createElement("style");
+                    msViewportStyle.appendChild(
+                        document.createTextNode("@-ms-viewport{width:auto!important}")
+                    );
+                    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+                }
+            })();
         </script>
         <script type="text/javascript" src="javascript/jquery-1.10.2.js"></script>
+
+        <!-- APP ICONS -->
+        <link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png">
 
     </head>
