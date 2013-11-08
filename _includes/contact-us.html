@@ -1,6 +1,6 @@
 <div id="contactus" class="container section items top-divider">
 	<div class="hidden-xs">
-		<form id="contactUsForm">
+		<form id="contactUsForm1">
 		    <div class="row">
 		    	<div class="col-sm-6">
 		    		<h2>Contact Us</h2>
@@ -55,7 +55,7 @@
 	    		<img class="contact-us-btn" src="images/contact-us.png" style="margin-top: -10px"/>
 	    	</div>
 		</div>
-		<form>
+		<form id="contactUsForm2">
 			<input id="name" name="name" type="text" placeholder="Name:" maxlength="200"/>
 		    <input id="email" name="email" type="email" placeholder="Email:" maxlength="200"/>
 		    <textarea id="comment" name="comment" rows="10" placeholder="Comment:" maxlength="5000"></textarea>
@@ -66,21 +66,55 @@
 		    </div>
 		</form>
 		<script type="text/javascript">
-		jQuery( ".submit" ).click(function( event ) {
+		var req;
+		jQuery( "#contactUsForm1 .submit" ).click(function( event ) {
 			event.preventDefault();
-			var req = jQuery.post( "http://bridgeit.mobi/site/contact/send", $( "#contactUsForm" ).serialize() )
-			.done(function() {
-			    alert( "Thank you, your comment has been submitted to the overlords." );
-			  })
-			  .fail(function() {
-			  	console.log(req);
-			    alert("Sorry, there was an error submitting the form, please try again later.");
-			  });
-
-			  function validate(){
-			  	var valid = true;
-			  }
+			var form = $("#contactUsForm1");
+			if( validate(form[0])){
+				req = jQuery.post( "http://bridgeit.mobi/site/contact/send", form.serialize() );
+				console.log(req);
+				req.done(success)
+				req.fail(fail);
+			}
 		});
+		jQuery( "#contactUsForm2 .submit" ).click(function( event ) {
+			event.preventDefault();
+			var form = $("#contactUsForm2");
+			if( validate(form[0])){
+				req = jQuery.post( "http://bridgeit.mobi/site/contact/send", form.serialize() );
+				console.log(req);
+				req.done(success)
+				req.fail(fail);
+			}
+		});
+
+		function success(){
+			console.log(JSON.stringify(req));
+			alert( "Thank you, your comment has been submitted to the overlords." );
+		}
+
+		function fail(){
+			console.log(JSON.stringify(req));
+			alert("Sorry, there was an error submitting the form, please try again later.");
+		}
+
+		function validate(form){
+		  	if( form.name.value ==  ''){
+		  		alert("Don't forget to add your name...");
+		  		return false;
+		  	}
+		  	if( form.email.value == ''){
+		  		alert("Don't forget to add your email...");
+		  		return false;
+		  	}
+		  	if( form.name.value.length > 200 
+		  		|| form.email.value.length > 200 
+		  		|| form.comment.value.length > 5000 ){
+		  		alert("Sorry, there was an error processing your request.");
+		  		return false;
+		  	}
+		  	return true;
+		}
 		</script>
 	</div>
 </div>
