@@ -1042,5 +1042,19 @@ pre {
     margin-top: -9px;
     margin-left: -7px;
 }
-
+.legend.grid .row > div{
+    text-align: center;
+    padding-top: 5px;
+}
+.legend.grid .row > div > *{
+    vertical-align: middle;
+}
+.legend.grid .row span{
+    font-size: 14px;
+    line-height: 14px;
+}
+.legend.grid .yes, .legend.grid .no{
+    display: inline-block;
+    margin-right: 10px;
+}
 
