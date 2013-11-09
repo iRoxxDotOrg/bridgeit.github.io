@@ -1011,6 +1011,11 @@ pre {
         margin-top: 100px;
     }
 
+    /* anchor scroll top adjustments */
+    #demos, #downloads, #contactus, #license, #privacy{
+        padding-top: 100px;
+    }
+
 }
 .community-link{
     text-align: right;
@@ -1037,4 +1042,5 @@ pre {
     margin-top: -9px;
     margin-left: -7px;
 }
+
 
