@@ -266,7 +266,7 @@ p{
     background-color: transparent;
     text-shadow: 1px 1px 1px rgba(157,108,78,0.9);
 }
-.jumbotron .btn, #returnToApp{
+.jumbotron .btn, #returnToApp, #androidAppLink{
     color: rgb(99,92,77);
     border: 1px solid #AD8F42;
     padding: 4px 16px;
@@ -285,11 +285,11 @@ p{
     -o-transition: background 1s ease-out;  
     transition: background 1s ease-out;  
 }
-.jumbotron .btn:hover, #returnToApp:hover{
+.jumbotron .btn:hover, #returnToApp:hover, #androidAppLink:hover{
     color: #994300;
     background-position:100px;  
 }
-.jumbotron .btn i, #returnToApp i{
+.jumbotron .btn i, #returnToApp i, #androidAppLink i{
     padding: 6px 0px 6px 14px;
     display: inline-block;
     margin-left: 11px;

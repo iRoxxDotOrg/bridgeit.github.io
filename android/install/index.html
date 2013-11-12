@@ -16,18 +16,28 @@
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"/>
         
         <script type="text/javascript" src="../../javascript/jquery-1.10.2.js"></script>
-
         <script type="text/javascript">
-            var referrer = document.referrer;
-            console.log('referrer = ' + referrer);
-            if( !referrer || referrer.indexOf('play.google.com') < 0 ){
-                window.location.href = 'https://play.google.com/store/apps/details?id=mobi.bridgeit';
+            var VISIT_TOKEN = 'bridgeit.androidInstallVisted';
+            //check visited token, and redirect only if false
+            var visited = false;
+            if( localStorage ){
+                var token = localStorage.getItem(VISIT_TOKEN);
+                if( token ){
+                    console.log('visited token: ' + token );
+                    visited = true;
+                }
+            }
+
+            if( !visited ){
+                if( localStorage ){
+                    localStorage.setItem(VISIT_TOKEN, new Date().getTime());
+                }
+                window.location.href = 'market://details?id=mobi.bridgeit'; 
             }
         </script>
-
     </head>
 
-    <body>
+    <body> 
         <div id="wrap">
             <div class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
@@ -39,16 +49,16 @@
 
             <div class="main">
                 <div id="install" class="container section">
-                    <h2>Install the BridgeIt App</h2>
+                    <h2>BridgeIt for Android</h2>
                     <p>
                         <a id="returnToApp" class="btn btn-warning" onclick="goToLastPage()">
                             Return to your app <i class="icon-arrow-right"></i>
                         </a>
                      </p>
-                    <div class="row app-stores">
-                        <a href="{{ site.android_app_url }}" target="_blank">
-                            <img alt="Get BridgeIt on Google Play"
-                                src="../../images/google-play.png" class="img-responsive"/>
+                    <div class="row app-stores" style="text-align: center">
+                        <a id="androidAppLink" href="market://details?id=mobi.bridgeit" target="_blank" 
+                            class="btn btn-warning">
+                            Install BridgeIt <i class="icon-arrow-right"></i>
                         </a>
                     </div>
                 </div>
