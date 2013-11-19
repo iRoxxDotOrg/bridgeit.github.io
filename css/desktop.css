@@ -679,15 +679,22 @@ html.ie8 #features .grid{
 html.ie8 .features-fallback{
     display: block !important;
 }
-
-#features .augmented-reality-icon{
+.augmented-reality-icon{
     background-image: url(../images/augmented-reality-icon-for-carousel.png);
-    width: 50px;
-    height: 50px;
     display: block;
     background-repeat: no-repeat;
-    background-size: 41px;
     margin: 0 auto;
+}
+#features .augmented-reality-icon{
+    width: 50px;
+    height: 50px;
+    background-size: 41px;
+    background-position: 5px 0;
+}
+#apidocs .augmented-reality-icon{
+    width: 50px;
+    height: 50px;
+    background-size: 41px;
     background-position: 5px 0;
 }
 
