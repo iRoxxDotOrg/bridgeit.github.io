@@ -710,7 +710,7 @@ html.ie8 .features-fallback{
     height: 75px;
 }
 .grid .row:first-child div.cell div.mobile-os, .grid .row .api{
-    font-size: 8px;
+    font-size: 10px;
     color: #3D3D3D;
     padding-top: 57px;
     text-shadow: none;
