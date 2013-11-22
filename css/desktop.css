@@ -328,6 +328,7 @@ p{
 }
 .jumbotron .splash-buttons a i{
     float: right;
+    width: 26px;
 }
 .jumbotron .splash-buttons a i.icon-play-circle{
     font-size: 27px;
