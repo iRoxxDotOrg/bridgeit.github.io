@@ -590,6 +590,7 @@ html.ie8 #carousel{
     .jumbotron h1 {
         font-size: 50px;
         text-shadow: 0px -2px 5px rgba(85, 64, 52, 0.9);
+        margin-top: 50px;
     }
     .jumbotron h1 .bridgeit-font{
         font-size: 46px;
