@@ -275,7 +275,7 @@ p{
     text-shadow: 1px 1px 1px rgba(157,108,78,0.9);
 }
 .jumbotron .btn:first-child{
-    margin-top: 32px;
+    margin-top: 10px;
 }
 .jumbotron .btn, #returnToApp, #androidAppLink{
     color: #EEE;
@@ -505,21 +505,29 @@ html.ie8 #carousel{
         background-position: 50% 0;
     }
     .jumbotron .btn{
-        padding: 2px 6px;
+        padding: 0 6px;
         margin-top: 12px;
     }
     .jumbotron .btn i {
         padding: 6px 4px 6px 7px;
         margin-left: 4px;
      }
+    .jumbotron .splash-buttons a i.icon-play-circle {
+        font-size: 23px;
+        padding: 4px 2px 4px 6px;
+        margin: 0 2px 0 0;
+    }
     .jumbotron .container{
         margin-left: 0;
         text-align: left;
         min-height: 280px;
     }
     .jumbotron h1 {
-        font-size: 25px;
+        font-size: 31px;
         text-shadow: 0px -2px 5px rgba(85, 64, 52, 0.9);
+    }
+    .jumbotron .bridgeit-font{
+        font-size: 29px;
     }
     .jumbotron .banner-image{
         width: 100%;
@@ -528,15 +536,21 @@ html.ie8 #carousel{
         text-align: left;
     }
     .jumbotron img{
-        width: 139px;
-        margin-top: 39px;
-        margin-left: -18px; 
+        width: 100%;
+        max-width: 235px;
+        margin-top: 20px;
+
+    }
+    #carousel{ display: none; }
+    .links div > a{ display: none; }
+}
+@media screen and (max-width: 450px) {
+    .jumbotron h1 {
+        font-size: 25px;
     }
     .jumbotron .bridgeit-font{
         font-size: 24px;
     }
-    #carousel{ display: none; }
-    .links div > a{ display: none; }
 }
 @media screen and (min-width: 768px) {
     #featureitems{
