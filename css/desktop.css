@@ -782,8 +782,10 @@ html.ie8 .features-fallback{
     padding-top: 57px;
     text-shadow: none;
 }
-.grid .row .cell div.api{
+.grid .row .cell div.api, .grid .row .cell div.tutorials, .grid .row .cell div.features{
     padding-top: 28px;
+    color: #333;
+    text-shadow: none !important;
 }
 #features .grid .row > div:first-child{
     color: #888;
@@ -806,37 +808,39 @@ html.ie8 .features-fallback{
     .grid .row:first-child .cell, .grid .row:last-child .cell{
         color: #FFF;
     }
-    .grid .row:first-child .cell i, .grid .row:last-child .cell i{
+    .grid .row:first-child .cell i, .grid .row:last-child .cell i,
+    .grid .row.ftr .cell i{
         text-shadow: 1px 1px 5px #555;
     }
 }
 #features .grid .row:first-child .cell, #features .grid .row:last-child .cell{
     color: #FFF;
 }
-#features .grid .row:first-child .cell i, #features .grid .row:last-child .cell i{
+#features .grid .row:first-child .cell i, #features .grid .row:last-child .cell i,
+#features .grid .row:ftr .cell i{
     text-shadow: 1px 1px 5px #555;
 }
 .grid .row div:first-child i{
     font-size: 35px;
     display: inline-block;
     margin-top: 0;
-    text-shadow: 0 1px 3px #FDFDFD;
 }
-.grid .row:first-child .cell, .grid .row:last-child .cell{
+.grid .row:first-child .cell, .grid .row:last-child .cell, 
+.grid .row.ftr .cell, .grid .row.hdr .cell{
     background-color: rgb(192,192,192);
     padding: 2px;
 }
-.grid .row:last-child a{
+.grid .row:last-child a, .grid .row.ftr a{
     color: #DADADA;
 }
 #features .grid .row .cell a:hover i, #apidocs .grid .row .cell a:hover i{
     text-shadow: 0 0 16px #B12906;
 }
-.grid .row:first-child .cell i, .grid .row:last-child .cell i{
+.grid .row:first-child .cell i, .grid .row:last-child .cell i, .grid .row.ftr .cell i{
     font-size: 30px;
     margin-bottom: 1px;
     display: inline-block;
-    line-height: 2em;
+    line-height: 2.3em;
 }
 
 .grid .row .cell i.aug{
@@ -880,7 +884,7 @@ html.ie8 .features-fallback{
     position: absolute;
     margin-left: 6px;
     font-size: 16px;
-    margin-top: 34px;
+    margin-top: 39px;
     padding: 0;
     line-height: 0;
 }
@@ -934,7 +938,7 @@ html.ie8 .apidocs-fallback{
     .grid .row div:first-child .cell {
         padding-top: 2px;
     }
-    #apidocs .grid .row div:nth-child(2) .cell {
+    #apidocs .grid .row div:nth-child(2) .cell, #apidocs .grid .row div:nth-child(3) .cell {
         padding-top: 0;
         line-height: 50px;
     }
@@ -985,7 +989,7 @@ html.ie8 .apidocs-fallback{
 }
 .section{ 
     margin-top: -90px;
-    padding-top: 90px;
+    padding-top: 100px;
     padding-bottom: 40px;
 }
 pre {
