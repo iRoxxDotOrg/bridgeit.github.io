@@ -777,7 +777,6 @@ html.ie8 .features-fallback{
     height: 75px;
 }
 .grid .row:first-child div.cell div.mobile-os, .grid .row .api{
-    font-size: 10px;
     color: #3D3D3D;
     padding-top: 57px;
     text-shadow: none;
@@ -819,6 +818,11 @@ html.ie8 .features-fallback{
 #features .grid .row:first-child .cell i, #features .grid .row:last-child .cell i,
 #features .grid .row:ftr .cell i{
     text-shadow: 1px 1px 5px #555;
+}
+#features .grid .cell .features,
+#features .grid .cell .tutorials,
+#features .grid .cell .api{
+    font-size: 14px;
 }
 .grid .row div:first-child i{
     font-size: 35px;
