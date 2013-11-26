@@ -819,10 +819,11 @@ html.ie8 .features-fallback{
 #features .grid .row:ftr .cell i{
     text-shadow: 1px 1px 5px #555;
 }
-#features .grid .cell .features,
-#features .grid .cell .tutorials,
-#features .grid .cell .api{
+.grid .row > div > .cell:first-child > .features, 
+.grid .row > div > .cell:first-child > .tutorials, 
+.grid .row > div > .cell:first-child > .api{
     font-size: 14px;
+    color: #666;
 }
 .grid .row div:first-child i{
     font-size: 35px;
