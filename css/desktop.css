@@ -365,6 +365,7 @@ p{
     color: #DD5734;
     font-size: 15px;
     float: right;
+    clear: both;
     font-weight: normal;
     margin-top: 30px;
 }
