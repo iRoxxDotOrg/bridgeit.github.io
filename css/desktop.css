@@ -885,6 +885,16 @@ html.ie8 .features-fallback{
     -webkit-box-shadow:   1px 1px 3px 2px #BEBEBE;
     box-shadow:           1px 1px 3px 2px #BEBEBE;
 }
+.grid .alpha{
+    border: 3px solid rgb(152,152,152);
+    border-radius: 12px;
+    width: 25px; height: 25px;
+    margin: 0 auto;
+    background-color: #FFFFCA;
+    -moz-box-shadow:      1px 1px 3px 2px #BEBEBE;
+    -webkit-box-shadow:   1px 1px 3px 2px #BEBEBE;
+    box-shadow:           1px 1px 3px 2px #BEBEBE;
+}
 .grid .row .cell i.contact-at{
     font-style: normal;
     position: absolute;
@@ -975,7 +985,7 @@ html.ie8 .apidocs-fallback{
         font-size: 20px;
         margin-top: 0;
     }
-    .grid .yes, .grid .no {
+    .grid .yes, .grid .no, .grid .alpha {
         width: 15px;
         height: 15px;
         margin: 0 auto;
@@ -1120,8 +1130,9 @@ pre {
     margin-left: -7px;
 }
 .legend.grid .row > div{
-    text-align: center;
+    text-align: left;
     padding-top: 5px;
+    padding-left: 10px;
 }
 .legend.grid .row > div > *{
     vertical-align: middle;
@@ -1130,7 +1141,7 @@ pre {
     font-size: 14px;
     line-height: 14px;
 }
-.legend.grid .yes, .legend.grid .no{
+.legend.grid .yes, .legend.grid .no, .legend.grid .alpha{
     display: inline-block;
     margin-right: 10px;
 }
