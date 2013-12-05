@@ -457,6 +457,11 @@ p{
     vertical-align: top;
     line-height: 26px;
 }
+@media screen and (min-width: 768px) {
+    .contact .anchors a.hidden-xs {
+        display: inline-block !important;
+    }
+}
 .contact .anchors a:hover{
     color: #EB5841;
 }
@@ -464,6 +469,14 @@ p{
     font-size: 47px;
     color: #F36930;
     text-shadow: 0 2px 9px #333;
+}
+@media screen and (max-width: 767px) {
+    .contact .anchors i{
+        font-size: 30px;
+    }
+    .contact .anchors a {
+        margin: 0 5px;
+    }
 }
 .contact .anchors i:hover{
     color: #F74E08;
