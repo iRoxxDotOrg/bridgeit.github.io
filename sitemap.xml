@@ -8,39 +8,63 @@
       <priority>0.8</priority>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/bridgeit.html</loc>
-	<changefreq>weekly</changefreq>
+	  <loc>http://bridgeit.mobi/bridgeit.html</loc>
+	  <changefreq>weekly</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/about.html</loc>
-	<changefreq>weekly</changefreq>
+	  <loc>http://bridgeit.mobi/about.html</loc>
+	  <changefreq>weekly</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/bridgeit-license-1.0.html</loc>
-	<changefreq>monthly</changefreq>
+	  <loc>http://bridgeit.mobi/bridgeit-license-1.0.html</loc>
+	  <changefreq>monthly</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/community.html</loc>
-	<changefreq>weekly</changefreq>
+	  <loc>http://bridgeit.mobi/community.html</loc>
+	  <changefreq>weekly</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/help.html</loc>
-	<changefreq>weekly</changefreq>
+	  <loc>http://bridgeit.mobi/help.html</loc>
+	  <changefreq>weekly</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/privacy.html</loc>
-	<changefreq>weekly</changefreq>
+	  <loc>http://bridgeit.mobi/privacy.html</loc>
+	  <changefreq>weekly</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/docs/</loc>
-	<changefreq>weekly</changefreq>
+	  <loc>http://bridgeit.mobi/docs/</loc>
+	  <changefreq>weekly</changefreq>
    </url>
    <url>
 	<loc>http://bridgeit.mobi/forum/</loc>
 	<changefreq>daily</changefreq>
    </url>
    <url>
-	<loc>http://bridgeit.mobi/demo/</loc>
-	<changefreq>weekly</changefreq>
+      <loc>http://bridgeit.mobi/forum/index.php?p=/categories/announcements</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://bridgeit.mobi/forum/index.php?p=/categories/blog</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://bridgeit.mobi/forum/index.php?p=/categories/general</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://bridgeit.mobi/forum/index.php?p=/categories/ios-discussion</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://bridgeit.mobi/forum/index.php?p=/categories/android-discussion</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://bridgeit.mobi/forum/index.php?p=/categories/windows-phone</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+	  <loc>http://bridgeit.mobi/demo/</loc>
+	  <changefreq>weekly</changefreq>
    </url>
 </urlset> 
