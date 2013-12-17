@@ -1027,31 +1027,12 @@ pre {
     background-color: inherit;
     border: none;
 }
-.demo-qr{
-    padding: 30px 50px;
-    border-radius: 25px;
-    width: 251px;
-    box-shadow: 0px 19px 37px 5px #A3A3A3;
+
+.row-nopad {
+    padding-bottom: 0px !important;
 }
-.demo-qr-sheen{
-    position: relative;
-}
-.demo-qr-sheen div{
-    opacity: 0.35;
-    height: 90px;
-    background-color: #FFF;
-    width: 100%;
-    position: absolute;
-    border-bottom-left-radius: 165px 13px;
-    border-bottom-right-radius: 165px 13px;
-}
+
 @media screen and (max-width: 767px) {
-    .demo-qr{
-        padding: 10px 15px;
-        border-radius: 5px;
-        width: 100%;
-        max-width: 150px;
-    }
     .items .more {
         margin-top: 0;
     }
