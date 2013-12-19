@@ -1145,3 +1145,17 @@ pre {
     width: 100%;
 }
 
+.legendYes {
+    float:left;
+    width:113px;
+}
+
+.legendNo {
+    float:left;
+    width:131px;
+}
+
+.legendAlpha {
+    float:left;
+    width:170px;
+}
