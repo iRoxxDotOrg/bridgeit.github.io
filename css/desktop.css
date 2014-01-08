@@ -1050,9 +1050,20 @@ pre {
 #contactus .commentfieldset .col-sm-10{
     padding-left: 20px;
 }
-#contactus label, #contactus input, #contactus textarea{
+#contactus label{
     color: #777;
-    font-weight: 300;
+    font-weight: bold;
+}
+#contactus input, #contactus textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D3D3D3 !important;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #D3D3D3 inset;
+    outline: medium none;
+    color: #555;
+    font-weight: normal;
+    padding: 4px;
+    margin: 0;
 }
 #contactus input, #contactus textarea{
     border: 1px solid #777;
