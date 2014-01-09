@@ -1170,3 +1170,20 @@ pre {
     float:left;
     width:170px;
 }
+
+@media (min-width: 992px) {
+    .bannerLeft {
+        padding-left:150px;
+        width:52%;
+    }
+
+    .bannerButtons {
+        padding-left:110px;
+    }
+
+    .bannerImage {
+        padding-left:4px;
+        width:48%;
+    }
+}
+
