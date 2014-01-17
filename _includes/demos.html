@@ -3,9 +3,10 @@
 	    <div class="col-xs-7 item-txt-left">
 	        <h2>Mobile Demo</h2>
 	        <p>
-	            The BridgeIt mobile demo shows the various native integrations in action. Have a mobile device? Try it out. Scan the QR Code (right) with your device or go to the demo.
+	            The BridgeIt mobile demo shows the various native integrations in action. Have a mobile device? Try it out. Scan the QR Code (right) with your device or go to the demo. If you don't have a mobile device you can preview the demo in the video below.
 	        </p>
-	        <a class="more" href="{{ site.demo_url }}">View the Mobile Demo&nbsp;&raquo;</a>
+	        <a class="more" href="{{ site.demo_url }}">View Mobile Demo (Mobile Device Required)&nbsp;&raquo;</a>
+            <a class="more" style="margin-top:10px;" href="#demoVideo" onclick="playMobileDemoVideo();">View Mobile Demo (Video)&nbsp;&raquo;</a>
 	    </div>
 	    <div class="col-xs-5">
             <a href="{{ site.demo_url }}">
@@ -13,4 +14,53 @@
             </a>
 	    </div>
 	</div>
+</div>
+<div id="demoVideo" class="container section items top-divider">
+    <h2>Mobile Demo Video</h2>
+    <div class="mobile-demo-video mdv-xlarge">
+        <video id="mobile-demo-video-1" width="450" height="800"
+               poster="images/bridgeIt-demo-video.png"
+               src="video/bridgeIt-demo-video.mp4"
+               type="video/mp4"
+               preload="none"
+               controls>
+        </video>
+    </div>
+    <div class="mobile-demo-video mdv-large">
+        <video id="mobile-demo-video-2" width="360" height="640"
+               poster="images/bridgeIt-demo-video.png"
+               src="video/bridgeIt-demo-video.mp4"
+               type="video/mp4"
+               preload="none"
+               controls>
+        </video>
+    </div>
+    <div class="mobile-demo-video mdv-medium">
+        <video id="mobile-demo-video-3" width="288" height="512"
+               poster="images/bridgeIt-demo-video.png"
+               src="video/bridgeIt-demo-video.mp4"
+               type="video/mp4"
+               preload="none"
+               controls>
+        </video>
+    </div>
+    <div class="mobile-demo-video mdv-small">
+        <video id="mobile-demo-video-4" width="230" height="409"
+               poster="images/bridgeIt-demo-video.png"
+               src="video/bridgeIt-demo-video.mp4"
+               type="video/mp4"
+               preload="none"
+               controls>
+        </video>
+    </div>
+    <div class="mobile-demo-video mdv-xsmall">
+        <video id="mobile-demo-video-5" width="184" height="327"
+               poster="images/bridgeIt-demo-video.png"
+               src="video/bridgeIt-demo-video.mp4"
+               type="video/mp4"
+               preload="none"
+
+               controls>
+        </video>
+    </div>
 </div>
