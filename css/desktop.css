@@ -1157,9 +1157,13 @@ pre {
 }
 
 .getting-started-video img,
+.getting-started-video iframe {
+    cursor: pointer;
+}
+
+.getting-started-video img,
 .getting-started-video iframe,
 .mobile-demo-video video {
-    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
