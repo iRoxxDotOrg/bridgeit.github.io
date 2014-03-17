@@ -1040,10 +1040,17 @@ pre {
 #downloads p{
     margin: 0 0 20px;
 }
-#contactus .name, #contactus .email{
+#contactus .firstname,
+#contactus .lastname,
+#contactus .company,
+#contactus .phone,
+#contactus .email{
     margin: 10px 0 10px 0;
 }
-#contactus .name .col-sm-4, #contactus .name .col-sm-6,
+#contactus .firstname .col-sm-4, #contactus .firstname .col-sm-6,
+#contactus .lastname .col-sm-4, #contactus .lastname .col-sm-6,
+#contactus .company .col-sm-4, #contactus .company .col-sm-6,
+#contactus .phone .col-sm-4, #contactus .phone .col-sm-6,
 #contactus .email .col-sm-4, #contactus .email .col-sm-6{
     padding: 0;
 }
@@ -1100,7 +1107,7 @@ pre {
     }
 }
 @media screen and (min-width: 768px) {
-    #contactus .name{
+    #contactus .firstname{
         margin-top: 100px;
     }
 
