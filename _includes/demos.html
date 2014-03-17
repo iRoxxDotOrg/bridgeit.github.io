@@ -1,66 +1,125 @@
 <div id="demos" class="container section items top-divider">
 	<div class="row row-nopad">
-	    <div class="col-xs-7 item-txt-left">
+	    <div class="col-xs-7 item-txt-left demoVideoMargin">
 	        <h2>Mobile Demo</h2>
 	        <p>
-	            The BridgeIt mobile demo shows the various native integrations in action. Have a mobile device? Try it out. Scan the QR Code (right) with your device or go to the demo. If you don't have a mobile device you can preview the demo in the video below.
+	            The BridgeIt mobile demo shows the various native integrations in action. Have a mobile device? Try it out. Scan the QR Code (below) with your device or go to the demo. If you don't have a mobile device you can preview the demo in the video on the right.
 	        </p>
 	        <a class="more" href="{{ site.demo_url }}">View Mobile Demo (Mobile Device Required)&nbsp;&raquo;</a>
-            <a class="more" style="margin-top:10px;" href="#demoVideo" onclick="playMobileDemoVideo();">View Mobile Demo (Video)&nbsp;&raquo;</a>
-	    </div>
-	    <div class="col-xs-5">
-            <a href="{{ site.demo_url }}">
-                <img alt="BridgeIt Demo QR Code" src="images/demo-qr.png" class="img-responsive item-btn"/>
+            <a class="more" style="margin-top:10px;" onclick="playMobileDemoVideo('demoVideo');">View Mobile Demo (Video)&nbsp;&raquo;</a>
+            <a class="more" style="margin-top:10px;" href="{{ site.demo_url }}">
+                <img alt="BridgeIt Demo QR Code" src="images/demo-qr.png" class="qrCode item-btn"/>
             </a>
+	    </div>
+	    <div class="col-xs-5" style="margin-left:-25px;">
+            <div id="demoVideo">
+                <div class="mobile-demo-video mdv-xlarge">
+                    <video id="mobile-demo-video-1" width="400" height="710"
+                           poster="images/bridgeIt-demo-video.png"
+                           src="video/bridgeIt-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video mdv-large">
+                    <video id="mobile-demo-video-2" width="320" height="568"
+                           poster="images/bridgeIt-demo-video.png"
+                           src="video/bridgeIt-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video mdv-medium">
+                    <video id="mobile-demo-video-3" width="256" height="455"
+                           poster="images/bridgeIt-demo-video.png"
+                           src="video/bridgeIt-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video mdv-small">
+                    <video id="mobile-demo-video-4" width="204" height="364"
+                           poster="images/bridgeIt-demo-video.png"
+                           src="video/bridgeIt-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video mdv-xsmall">
+                    <video id="mobile-demo-video-5" width="135" height="240"
+                           poster="images/bridgeIt-demo-video.png"
+                           src="video/bridgeIt-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+            </div>
 	    </div>
 	</div>
 </div>
-<div id="demoVideo" class="container section items top-divider">
-    <h2>Mobile Demo Video</h2>
-    <div class="mobile-demo-video mdv-xlarge">
-        <video id="mobile-demo-video-1" width="450" height="800"
-               poster="images/bridgeIt-demo-video.png"
-               src="video/bridgeIt-demo-video.mp4"
-               type="video/mp4"
-               preload="none"
-               controls>
-        </video>
-    </div>
-    <div class="mobile-demo-video mdv-large">
-        <video id="mobile-demo-video-2" width="360" height="640"
-               poster="images/bridgeIt-demo-video.png"
-               src="video/bridgeIt-demo-video.mp4"
-               type="video/mp4"
-               preload="none"
-               controls>
-        </video>
-    </div>
-    <div class="mobile-demo-video mdv-medium">
-        <video id="mobile-demo-video-3" width="288" height="512"
-               poster="images/bridgeIt-demo-video.png"
-               src="video/bridgeIt-demo-video.mp4"
-               type="video/mp4"
-               preload="none"
-               controls>
-        </video>
-    </div>
-    <div class="mobile-demo-video mdv-small">
-        <video id="mobile-demo-video-4" width="230" height="409"
-               poster="images/bridgeIt-demo-video.png"
-               src="video/bridgeIt-demo-video.mp4"
-               type="video/mp4"
-               preload="none"
-               controls>
-        </video>
-    </div>
-    <div class="mobile-demo-video mdv-xsmall">
-        <video id="mobile-demo-video-5" width="184" height="327"
-               poster="images/bridgeIt-demo-video.png"
-               src="video/bridgeIt-demo-video.mp4"
-               type="video/mp4"
-               preload="none"
-
-               controls>
-        </video>
+<div id="accidentDemo" class="container section items top-divider">
+    <div class="row row-nopad">
+        <div class="col-xs-7 item-txt-left accidentDemoVideoMargin">
+            <h2>Accident Report Demo</h2>
+            <p>
+                This accident reporting web application demo showcases some of the BridgeIt features in a real-world context. At the scene of an accident users can leverage the native device features of BridgeIt to fill out contact information, use the scanning function to rapidly retrieve vehicle information, upload multiple pictures of the incident, record short description memos, and share the final accident report using SMS messaging. It's all a little hypothetical, but it will give you an good idea how you can easily integrate native  features to your web applications.
+            </p>
+            <a class="more" onclick="playMobileDemoVideo('accidentDemoVideo');">View Accident Report Demo (Video)&nbsp;&raquo;</a>
+        </div>
+        <div class="col-xs-5" style="margin-left:-25px;">
+            <div id="accidentDemoVideo">
+                <div class="mobile-demo-video accident mdv-xlarge">
+                    <video id="mobile-accident-demo-video-1" width="400" height="710"
+                           poster="images/bridgeIt-accident-video.png"
+                           src="video/bridgeIt-accident-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video accident mdv-large">
+                    <video id="mobile-accident-demo-video-2" width="320" height="568"
+                           poster="images/bridgeIt-accident-video.png"
+                           src="video/bridgeIt-accident-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video accident mdv-medium">
+                    <video id="mobile-accident-demo-video-3" width="256" height="455"
+                           poster="images/bridgeIt-accident-video.png"
+                           src="video/bridgeIt-accident-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video accident mdv-small">
+                    <video id="mobile-accident-demo-video-4" width="204" height="364"
+                           poster="images/bridgeIt-accident-video.png"
+                           src="video/bridgeIt-accident-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+                <div class="mobile-demo-video accident mdv-xsmall">
+                    <video id="mobile-accident-demo-video-5" width="135" height="240"
+                           poster="images/bridgeIt-accident-video.png"
+                           src="video/bridgeIt-accident-demo-video.mp4"
+                           type="video/mp4"
+                           preload="none"
+                           controls>
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+

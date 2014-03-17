@@ -1105,7 +1105,7 @@ pre {
     }
 
     /* anchor scroll top adjustments */
-    #demos, #downloads, #contactus, #license, #privacy{
+    #demos, #downloads, #contactus, #license, #privacy, #accidentDemo{
         padding-top: 100px;
     }
 
@@ -1211,7 +1211,8 @@ pre {
 }
 
 @media (max-width: 991px) {
-    #demos.items .more {
+    #demos.items .more,
+    #accidentDemo.items .more {
         float:left;
     }
 }
@@ -1220,32 +1221,59 @@ pre {
     display:none;
 }
 
+img.qrCode {
+    float:right;
+    padding-right: 0;
+    padding-top: 40px;
+}
+
 @media (min-width: 991px) {
-    .mdv-xlarge {
-        display: block;
-    }
+    .mdv-xlarge {display: block;}
+    .demoVideoMargin {margin-top:11%;}
+    .accidentDemoVideoMargin {margin-top:17%;}
+    img.qrCode {width:90%;}
 }
 
-@media (min-width: 792px) and (max-width:991px) {
-    .mdv-large {
-        display: block;
-    }
+@media (min-width: 792px) and (max-width:990px) {
+    .mdv-large {display: block;}
+    .demoVideoMargin {margin-top:3%;}
+    .accidentDemoVideoMargin {margin-top:9%;}
+    img.qrCode {width:70%;}
 }
 
-@media (min-width: 633px) and (max-width:792px) {
-    .mdv-medium {
-        display: block;
-    }
+@media (min-width: 633px) and (max-width:791px) {
+    .mdv-medium {display: block;}
+    img.qrCode {width:50%; padding-top:20px;}
 }
 
-@media (min-width: 506px) and (max-width:633px) {
-    .mdv-small {
-        display: block;
-    }
+@media (min-width: 633px) and (max-width:767px) {
+    .demoVideoMargin {margin-top:4%;}
+    .accidentDemoVideoMargin {margin-top:11%;}
 }
 
-@media (max-width:506px) {
-    .mdv-xsmall {
-        display: block;
-    }
+@media (min-width: 506px) and (max-width:632px) {
+    .mdv-small {display: block;}
+    img.qrCode {width:50%; padding-top:20px;}
+}
+
+@media (max-width:505px) {
+    .mdv-xsmall {display: block;}
+    img.qrCode {display:none;}
+    .mobile-demo-video.mdv-xsmall {}
+    .mobile-demo-video.accident.mdv-xsmall {margin-top:29%;}
+}
+
+@media (max-width:445px) {
+    .mobile-demo-video.mdv-xsmall {margin-top:12%;}
+    .mobile-demo-video.accident.mdv-xsmall {margin-top:65%;}
+}
+
+@media (max-width:410px) {
+    .mobile-demo-video.mdv-xsmall {margin-top:20%;}
+    .mobile-demo-video.accident.mdv-xsmall {margin-top:75%;}
+}
+
+@media (max-width:385px) {
+    .mobile-demo-video.mdv-xsmall {margin-top:35%;}
+    .mobile-demo-video.accident.mdv-xsmall {margin-top:120%;}
 }

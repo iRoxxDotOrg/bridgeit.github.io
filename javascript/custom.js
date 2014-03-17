@@ -24,12 +24,12 @@ $(document).ready(function() {
     });
 });
 
-//**************** Mobile Demo Video ****************
+//**************** Mobile Demo Videos ****************
 
-// Helper method to find the correct video to play depending on the viewport size
-function findCurrentVideo() {
+// Helper method to find the correct video to play depending on the viewport size and id
+function findCurrentVideo(videoToFind) {
     var video = null;
-    $(".mobile-demo-video").each(function(){
+    $("#"+videoToFind+" .mobile-demo-video").each(function(){
         if($(this).is(':visible')) {
             var id = $(this).children('video').attr('id');
             video = document.getElementById(id);
@@ -38,9 +38,9 @@ function findCurrentVideo() {
     return video;
 }
 
-// When video ends go back to beginning so device is shown
+// When demo video ends go back to beginning so mobile device is shown
 $(document).ready(function() {
-    var video = findCurrentVideo();
+    var video = findCurrentVideo('demoVideo');
     if (video) {
         video.addEventListener('ended',function(){
             video.currentTime = 0;
@@ -49,9 +49,9 @@ $(document).ready(function() {
     }
 });
 
-// Play video. Used for the link on the demo page
-function playMobileDemoVideo() {
-    var video = findCurrentVideo();
+// Play video. Used for the links on the demo page
+function playMobileDemoVideo(videoToPlay) {
+    var video = findCurrentVideo(videoToPlay);
     video.play();
 }
 
