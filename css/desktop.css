@@ -537,7 +537,7 @@ html.ie8 #carousel{
         text-align: left;
         min-height: 280px;
     }
-    .jumbotron h1 {
+    .jumbotron h2 {
         font-size: 31px;
         text-shadow: 0px -2px 5px rgba(85, 64, 52, 0.9);
     }
@@ -560,7 +560,7 @@ html.ie8 #carousel{
     .links div > a{ display: none; }
 }
 @media screen and (max-width: 450px) {
-    .jumbotron h1 {
+    .jumbotron h2 {
         font-size: 25px;
     }
     .jumbotron .bridgeit-font{
@@ -653,13 +653,14 @@ html.ie8 #carousel{
     .jumbotron .container{
         min-height: 320px;
     }
-    .jumbotron h1 {
+    .jumbotron h2 {
         font-size: 50px;
         text-shadow: 0px -2px 5px rgba(85, 64, 52, 0.9);
         margin-top: 30px;
     }
-    .jumbotron h1 .bridgeit-font{
+    .jumbotron h2 .bridgeit-font{
         font-size: 46px;
+        color: white;
     }
     .jumbotron .banner-image{
         width: 100%;
@@ -670,6 +671,12 @@ html.ie8 #carousel{
     .jumbotron img{
         margin-top: -41px;
         margin-left: -39px;
+    }
+    .jumbotron h1 {
+        font-size: 26px;
+        color: #FFFFFF;
+        line-height: 1.4;
+        font-weight: 300;
     }
     #carousel{
         background-color: rgba(0,0,0,0.2);
@@ -1284,3 +1291,6 @@ img.qrCode {
     .mobile-demo-video.mdv-xsmall {margin-top:35%;}
     .mobile-demo-video.accident.mdv-xsmall {margin-top:120%;}
 }
+
+#aboutFooter {text-align:center;}
+#featureitems {margin-top:40px;}

@@ -4528,7 +4528,7 @@ a.list-group-item.active > .badge,
   background-color: #eeeeee;
 }
 
-.jumbotron h1 {
+.jumbotron h2 {
   line-height: 1;
   color: inherit;
 }
@@ -4542,7 +4542,7 @@ a.list-group-item.active > .badge,
     padding: 50px 60px;
     border-radius: 6px;
   }
-  .jumbotron h1 {
+  .jumbotron h2 {
     font-size: 63px;
   }
 }
