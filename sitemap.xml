@@ -67,4 +67,12 @@
 	  <loc>http://bridgeit.mobi/demo/</loc>
 	  <changefreq>weekly</changefreq>
    </url>
+   <url>
+	  <loc>http://bridgeit.mobi/customization-services.html</loc>
+	  <changefreq>weekly</changefreq>
+   </url>
+   <url>
+	  <loc>http://bridgeit.mobi/html5-camera-access.html</loc>
+	  <changefreq>weekly</changefreq>
+   </url>
 </urlset> 
