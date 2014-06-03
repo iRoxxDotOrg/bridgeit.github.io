@@ -46,8 +46,8 @@ code {
 }
 @font-face {
   font-family: 'GoodTimes';
-  src: url('fonts/good_times/ot/good_times_rg.otf') format("opentype"),
-       url('fonts/good_times/tt/good_times_rg.ttf') format('truetype');
+  src: url('../fonts/good_times/ot/good_times_rg.otf') format("opentype"),
+       url('../fonts/good_times/tt/good_times_rg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -290,10 +290,10 @@ p{
     background: -ms-linear-gradient(top,  rgba(240,127,72,1) 0%,rgba(229,89,59,1) 100%); /* IE10+ */
     background: linear-gradient(to bottom,  rgba(240,127,72,1) 0%,rgba(229,89,59,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f07f48', endColorstr='#e5593b',GradientType=0 ); /* IE6-9 */
-    -webkit-transition: background 0.2s ease-out;  
-    -moz-transition: background 0.2s ease-out;  
-    -o-transition: background 0.2s ease-out;  
-    transition: background 0.2s ease-out;  
+    -webkit-transition: background 0.2s ease-out;
+    -moz-transition: background 0.2s ease-out;
+    -o-transition: background 0.2s ease-out;
+    transition: background 0.2s ease-out;
     border: 2px solid #999;
 }
 .jumbotron .btn.grey{
@@ -310,7 +310,7 @@ p{
 .jumbotron .btn:hover, #returnToApp:hover, #androidAppLink:hover{
     color: #FFF;
     border-color: #D5D5D5;
-    background-position:100px;  
+    background-position:100px;
 }
 .jumbotron .btn i, #returnToApp i, #androidAppLink i{
     padding: 6px 0px 6px 14px;
@@ -502,7 +502,7 @@ html.ie8 #carousel{
     .visible-xs{
         display: inline-block !important;
     }
-    
+
      .dropdown-menu-summary{
         display: none;
      }
@@ -575,7 +575,7 @@ html.ie8 #carousel{
         float: right;
     }
     /* submenu hover */
-    ul.nav li.dropdown:hover > ul.dropdown-menu, 
+    ul.nav li.dropdown:hover > ul.dropdown-menu,
     ul.nav li.dropdown > a:focus ~ ul.dropdown-menu {
         display: block;
         width: 100%;
@@ -617,7 +617,7 @@ html.ie8 #carousel{
     .navbar-default ul.navbar-nav > li.dropdown > .caret:hover{
         display: inline-block;
     }
-    ul.nav li.dropdown:hover > ul.dropdown-menu, 
+    ul.nav li.dropdown:hover > ul.dropdown-menu,
     ul.nav li.dropdown > a:focus ~ ul.dropdown-menu {
         display: block;
         width: 100%;
@@ -707,7 +707,7 @@ html.ie8 #carousel{
     #carousel h1, #carousel h2{
         margin-top: 0px;
     }
-    #carousel h2{ 
+    #carousel h2{
         font-size: 22px;
         color: #FFF;
     }
@@ -734,7 +734,7 @@ html.ie8 #carousel{
     .carousel-control > span{
         font-size: 58px;
     }
-    
+
     /* main */
     .main h1{
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -841,18 +841,38 @@ html.ie8 .features-fallback{
 #features .grid .row:ftr .cell i{
     text-shadow: 1px 1px 5px #555;
 }
-.grid .row > div > .cell:first-child > .features, 
-.grid .row > div > .cell:first-child > .tutorials, 
+.grid .row > div > .cell:first-child > .features,
+.grid .row > div > .cell:first-child > .tutorials,
 .grid .row > div > .cell:first-child > .api{
     font-size: 14px;
     color: #666;
+}
+@media screen and (max-width: 998px) {
+    .grid .row > div > .cell:first-child > .features,
+    .grid .row > div > .cell:first-child > .tutorials,
+    .grid .row > div > .cell:first-child > .api,
+    .grid .row:first-child .cell > div:first-child {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid .row > div > .cell:first-child > .features,
+    .grid .row > div > .cell:first-child > .tutorials,
+    .grid .row > div > .cell:first-child > .api{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .fa-cloud-download{
+        line-height: initial !important;
+    }
 }
 .grid .row div:first-child i{
     font-size: 35px;
     display: inline-block;
     margin-top: 0;
 }
-.grid .row:first-child .cell, .grid .row:last-child .cell, 
+.grid .row:first-child .cell, .grid .row:last-child .cell,
 .grid .row.ftr .cell, .grid .row.hdr .cell{
     background-color: rgb(192,192,192);
     padding: 2px;
@@ -1024,7 +1044,7 @@ html.ie8 .apidocs-fallback{
         color: #888;
     }
 }
-.section{ 
+.section{
     margin-top: -90px;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -1294,3 +1314,69 @@ img.qrCode {
 
 #aboutFooter {text-align:center;}
 #featureitems {margin-top:40px;}
+
+.icon-beacon-signal{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 11px;
+    right: 0px;
+    bottom: 13px;
+    left: -8px !important;
+    font-size: 12px !important;
+}
+.icon-beacon-circle{
+    margin-top: 10px !important;
+    line-height: initial !important;
+    font-size: 34px !important;
+    margin-left: -2px;
+}
+@media screen and (max-width: 767px) {
+    .icon-beacon{
+        top: -7px;
+    }
+    .icon-beacon-signal{
+        top: 3px;
+        left: -2px !important;
+    }
+    .icon-beacon-circle{
+        font-size: 28px !important;
+        margin-top: 0px !important;
+    }
+}
+@media (max-width:505px) {
+    .icon-beacon-signal{
+        left: -1px !important;
+    }
+}
+.icon-speech{
+    top: 5px;
+}
+.icon-speech i{
+    font-size: 23px !important;
+}
+.icon-speech .fa-microphone{
+    top: 10px;
+}
+.icon-speech .fa-rss{
+    top: -15px;
+    left: 0px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+@media screen and (max-width: 767px) {
+    .icon-speech i{
+        font-size: 17px !important;
+    }
+    .icon-speech .fa-microphone{
+        top: 5px;
+    }
+    .icon-speech .fa-rss{
+        top: -12px;
+    }
+}
