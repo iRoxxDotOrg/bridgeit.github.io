@@ -331,7 +331,7 @@ p{
     float: right;
     width: 26px;
 }
-.jumbotron .splash-buttons a i.icon-play-circle{
+.jumbotron .splash-buttons a i.fa-play-circle{
     font-size: 27px;
     padding: 0 0 0 8px;
 }
@@ -527,7 +527,7 @@ html.ie8 #carousel{
         padding: 6px 4px 6px 7px;
         margin-left: 4px;
      }
-    .jumbotron .splash-buttons a i.icon-play-circle {
+    .jumbotron .splash-buttons a i.fa-play-circle {
         font-size: 23px;
         padding: 4px 2px 4px 6px;
         margin: 0 2px 0 0;
@@ -959,7 +959,7 @@ html.ie8 .features-fallback{
     vertical-align: bottom;
     margin-bottom: -10px;
 }
-.grid .row .cell i.icon-picture{
+.grid .row .cell i.fa-picture{
     font-style: normal;
     position: absolute;
     margin-left: 2px;
@@ -967,7 +967,7 @@ html.ie8 .features-fallback{
     margin-top: 7px;
     padding: 0;
 }
-#carousel i.icon-picture{
+#carousel i.fa-picture{
     font-style: normal;
     position: absolute;
     margin-left: 7px;
@@ -1017,7 +1017,7 @@ html.ie8 .apidocs-fallback{
         font-size: 33px;
         margin-top: -12px;
     }
-    .grid .row .cell i.icon-picture{
+    .grid .row .cell i.fa-picture{
         margin-left: 2px;
         font-size: 8px;
         margin-top: 0;
