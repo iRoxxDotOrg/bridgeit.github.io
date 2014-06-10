@@ -27,11 +27,11 @@
     font-family: 'Euphoria Script', cursive;
     font-size: 22px;
 }
-.splash > p:last-child{ 
+.splash > p:last-child{
     font-weight: bold;
     text-align: center;
     width: 100%;
-    font-style: italic; 
+    font-style: italic;
     margin: 0;
 }
 .splash > .intro{
@@ -128,7 +128,7 @@
 #about .platforms{
     top: 9px;
 }
-@media screen and (max-width: 400px) {  
+@media screen and (max-width: 400px) {
     .platforms{
         position: static;
         text-align: center;
@@ -207,15 +207,15 @@ section > article > pre > code {
 .prettyprint code{
     font-size: 80%;
 }
-.highlightPlaceholder::-webkit-input-placeholder, .highlightPlaceholder:-moz-placeholder, 
+.highlightPlaceholder::-webkit-input-placeholder, .highlightPlaceholder:-moz-placeholder,
 .highlightPlaceholder::-moz-placeholder, .highlightPlaceholder:-ms-input-placeholder{
    color: red;
 }
 
 span.ellipsis{
-    max-width: 100%; 
+    max-width: 100%;
     overflow: hidden;
     padding: 10px;
-    text-overflow:ellipsis; 
+    text-overflow:ellipsis;
     white-space:nowrap
  }
