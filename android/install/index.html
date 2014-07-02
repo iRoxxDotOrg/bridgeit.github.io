@@ -1,20 +1,20 @@
 ---
 ---
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>BridgeIt: Web...meet Native</title>
-        
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="BridgeIt: Native mobile integration for webapps">
         <meta name="author" content="ICEsoft Technologies">
         <link rel="shortcut icon" href="../../favicon.png"/>
-    
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,600,300,400' rel='stylesheet' type='text/css'><link href="../../bootstrap-3.0.0/css/bootstrap.css" rel="stylesheet" media="screen"/>
         <link href="../../css/desktop.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"/>
-        
+
         <script type="text/javascript" src="../../javascript/jquery-1.10.2.js"></script>
         <script type="text/javascript">
             var VISIT_TOKEN = 'bridgeit.androidInstallVisted';
@@ -38,7 +38,7 @@
         </script>
     </head>
 
-    <body> 
+    <body>
         <div id="wrap">
             <div class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
@@ -57,7 +57,7 @@
                         </a>
                      </p>
                     <div class="row app-stores" style="text-align: center">
-                        <a id="androidAppLink" href="market://details?id=mobi.bridgeit" target="_blank" 
+                        <a id="androidAppLink" href="market://details?id=mobi.bridgeit" target="_blank"
                             class="btn btn-warning">
                             Install BridgeIt <i class="icon-arrow-right"></i>
                         </a>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="contact">
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
         <script type="text/javascript" src="../../javascript/bootstrap.js"></script>
         <script type="text/javascript">
@@ -187,9 +187,11 @@
             }
         }
         function goToLastPage(){
-            var lastPage = getLastPage();
-            console.log("bridgeit.lastPage = " + lastPage);
-            window.location.href = lastPage;
+            if (window.history.length == 1)  {
+    			window.close();
+    		} else  {
+    			window.history.back();
+    		}
         }
         var lastpage = getLastPage();
         console.log('bridgeit last page: ' + lastpage);
