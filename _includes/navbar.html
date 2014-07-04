@@ -127,8 +127,33 @@
                                 </ul>
                                 <b class="caret"></b>
                             </li>
+
+                            <li class="dropdown {% if include.category == 'services' %}active{% endif %}">
+                                <a href="customization-services.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="4"
+                                   onclick="window.location.href='customization-services.html';">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-summary">
+                                        Easily customize the BridgeIt Utility with your brand,<br/> features and capabilities.
+                                    </li>
+                                    {% if include.category == 'services' %}
+                                    <li>
+                                        <a onclick="scrollToSection('customizationServices');" tabindex="15">
+                                            <i class="fa fa-tasks"></i>Customization Services
+                                        </a>
+                                    </li>
+                                    {% else %}
+                                    <li>
+                                        <a href="customization-services.html#customizationServices" tabindex="16">
+                                            <i class="fa fa-tasks"></i>Customization Services
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                <b class="caret"></b>
+                            </li>
+
                             <li class="dropdown {% if include.category == 'about' %}active{% endif %}">
-                                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="4"
+                                <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" tabindex="5"
                                     onclick="window.location.href='about.html';">About </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-summary">
