@@ -31,11 +31,12 @@
             <div class="main">
                 <div id="install" class="container section">
                     <h2>BridgeIt for iOS is Installed</h2>
-                    <p style="text-align: center">
+					<h4 style="margin-left:30px;color:#CCC">Please close this tab to return to your application</h4>
+                    <!--<p style="text-align: center">
                         <a id="returnToApp" class="btn btn-warning" onclick="goToLastPage()">
                             Return to your app <i class="icon-arrow-right"></i>
                         </a>
-                     </p>
+                     </p>-->
                 </div>
             </div>
         </div>
@@ -154,7 +155,7 @@
         <script type="text/javascript" src="../../javascript/bootstrap.js"></script>
         <script type="text/javascript">
         function goToLastPage(){
-            if (window.history.length == 1)  {
+            if (window.history.length == 0)  {
     			window.close();
     		} else  {
     			window.history.back();
